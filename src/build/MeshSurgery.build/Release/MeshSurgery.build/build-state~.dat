@@ -1,0 +1,803 @@
+TMeshSurgery
+v6
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release/MeshSurgery.app/Contents/Info.plist /Users/roberto/Applications/brainbits/m.MeshSurgery/Info.plist
+cCpResource English.lproj/Credits.rtf build/Release/MeshSurgery.app/Contents/Resources/English.lproj/Credits.rtf
+cStripNIB /Users/roberto/Applications/brainbits/m.MeshSurgery/English.lproj/MainMenu.nib
+cStripNIB /Users/roberto/Applications/brainbits/m.MeshSurgery/English.lproj/MyDocument.nib
+cCopyStringsFile /Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release/MeshSurgery.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+cProcessPCH /var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-hfcwbgmxlgwuqcgonyjyvvcozdvw/MeshSurgery_Prefix.pch.pch MeshSurgery_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH /var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-dfohhiwnbrqbuqcxtrkgveprcsbg/MeshSurgery_Prefix.pch.pch MeshSurgery_Prefix.pch normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH /var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-cveevhilelydvqewyvbybqewzdlt/MeshSurgery_Prefix.pch.pch MeshSurgery_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH /var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-fyzbqwilonjrhegsuxajimonhzcq/MeshSurgery_Prefix.pch.pch MeshSurgery_Prefix.pch normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/MyDocument.o /Users/roberto/Applications/brainbits/m.MeshSurgery/MyDocument.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/main.o /Users/roberto/Applications/brainbits/m.MeshSurgery/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/math3D.o /Users/roberto/Applications/brainbits/m.MeshSurgery/math3D.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Int2D.o /Users/roberto/Applications/brainbits/m.MeshSurgery/Int2D.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Int3D.o /Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Float3D.o /Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Mesh.o /Users/roberto/Applications/brainbits/m.MeshSurgery/Mesh.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/MyView.o /Users/roberto/Applications/brainbits/m.MeshSurgery/MyView.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Trackball.o /Users/roberto/Applications/brainbits/m.MeshSurgery/Trackball.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/DocumentRAMON.o /Users/roberto/Applications/brainbits/RAMONES/StereotaxicEditorRAMON/DocumentRAMON.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/RAMON.o /Users/roberto/Applications/brainbits/RAMONES/StereotaxicEditorRAMON/RAMON.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+
+N/Applications/_Programming/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/SDKSettings.plist
+c0000000052691997000000000000044C
+t1382619543
+s1100
+
+N/Applications/_Programming/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000531EF7F200000000000001DE
+t1394538482
+s478
+
+N/Users/roberto/Applications/brainbits/RAMONES/StereotaxicEditorRAMON/DocumentRAMON.m
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/roberto/Applications/brainbits/RAMONES/StereotaxicEditorRAMON/RAMON.m
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/roberto/Applications/brainbits/m.MeshSurgery/English.lproj/Credits.rtf
+c0000000049F3E5AC00000000000001B4
+t1240720812
+s436
+
+N/Users/roberto/Applications/brainbits/m.MeshSurgery/English.lproj/InfoPlist.strings
+c0000000049F3E5AC00000000000000CC
+t1240720812
+s204
+
+N/Users/roberto/Applications/brainbits/m.MeshSurgery/English.lproj/MainMenu.nib
+c0000000049F3E5AC0000000000000088
+t1240720812
+s136
+
+N/Users/roberto/Applications/brainbits/m.MeshSurgery/English.lproj/MyDocument.nib
+c000000005199CE270000000000000088
+t1369034279
+s136
+
+N/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m
+c000000004DF07B1C00000000000002FF
+t1307605788
+s767
+
+N/Users/roberto/Applications/brainbits/m.MeshSurgery/Info.plist
+c0000000049F3FC4F0000000000000527
+t1240726607
+s1319
+
+N/Users/roberto/Applications/brainbits/m.MeshSurgery/Int2D.m
+c000000004AB291A700000000000001A1
+t1253216679
+s417
+
+N/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.m
+c000000004D172833000000000000021B
+t1293363251
+s539
+
+N/Users/roberto/Applications/brainbits/m.MeshSurgery/Mesh.m
+c000000005361FE11000000000000AF0D
+t1398930961
+s44813
+
+N/Users/roberto/Applications/brainbits/m.MeshSurgery/MeshSurgery_Prefix.pch
+c0000000049F3E5AC0000000000000099
+t1240720812
+s153
+
+N/Users/roberto/Applications/brainbits/m.MeshSurgery/MyDocument.m
+c000000005199CF090000000000002161
+t1369034505
+s8545
+
+N/Users/roberto/Applications/brainbits/m.MeshSurgery/MyView.m
+c000000005199CCB00000000000002B28
+t1369033904
+s11048
+
+N/Users/roberto/Applications/brainbits/m.MeshSurgery/Trackball.m
+c00000000458009A2000000000000196A
+t1166018978
+s6506
+
+N/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/DocumentRAMON.o
+t2
+s0
+
+N/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Float3D.o
+t2
+s0
+
+N/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Int2D.o
+t2
+s0
+
+N/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Int3D.o
+t2
+s0
+
+N/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Mesh.o
+t2
+s0
+
+N/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/MyDocument.o
+t2
+s0
+
+N/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/MyView.o
+t2
+s0
+
+N/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/RAMON.o
+t2
+s0
+
+N/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Trackball.o
+t2
+s0
+
+N/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/main.o
+t2
+s0
+
+N/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/math3D.o
+t2
+s0
+
+N/Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release/MeshSurgery.app/Contents/Info.plist
+t2
+s0
+
+N/Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release/MeshSurgery.app/Contents/PkgInfo
+t2
+s0
+
+N/Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release/MeshSurgery.app/Contents/Resources/English.lproj/Credits.rtf
+t2
+s0
+
+N/Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release/MeshSurgery.app/Contents/Resources/English.lproj/InfoPlist.strings
+t2
+s0
+
+N/Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release/MeshSurgery.app/Contents/Resources/English.lproj/MainMenu.nib
+t2
+s0
+
+N/Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release/MeshSurgery.app/Contents/Resources/English.lproj/MyDocument.nib
+t2
+s0
+
+N/Users/roberto/Applications/brainbits/m.MeshSurgery/main.m
+c0000000049F3E5AC00000000000000FF
+t1240720812
+s255
+
+N/Users/roberto/Applications/brainbits/m.MeshSurgery/math3D.c
+c000000005199CCBF0000000000000F6C
+t1369033919
+s3948
+
+N/var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-cveevhilelydvqewyvbybqewzdlt/MeshSurgery_Prefix.pch.pch
+t2
+s0
+
+N/var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-dfohhiwnbrqbuqcxtrkgveprcsbg/MeshSurgery_Prefix.pch.pch
+t1398931574
+s116916
+
+N/var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-fyzbqwilonjrhegsuxajimonhzcq/MeshSurgery_Prefix.pch.pch
+t2
+s0
+
+N/var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-hfcwbgmxlgwuqcgonyjyvvcozdvw/MeshSurgery_Prefix.pch.pch
+t1398931575
+s13734464
+
+CBuild AST from /Users/roberto/Applications/brainbits/RAMONES/StereotaxicEditorRAMON/DocumentRAMON.m
+r0
+
+CBuild AST from /Users/roberto/Applications/brainbits/RAMONES/StereotaxicEditorRAMON/RAMON.m
+r0
+
+CBuild AST from /Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m
+r0
+
+CBuild AST from /Users/roberto/Applications/brainbits/m.MeshSurgery/Int2D.m
+r0
+
+CBuild AST from /Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.m
+r0
+
+CBuild AST from /Users/roberto/Applications/brainbits/m.MeshSurgery/Mesh.m
+r0
+
+CBuild AST from /Users/roberto/Applications/brainbits/m.MeshSurgery/MyDocument.m
+r0
+
+CBuild AST from /Users/roberto/Applications/brainbits/m.MeshSurgery/MyView.m
+r0
+
+CBuild AST from /Users/roberto/Applications/brainbits/m.MeshSurgery/Trackball.m
+r0
+
+CBuild AST from /Users/roberto/Applications/brainbits/m.MeshSurgery/main.m
+r0
+
+CBuild AST from /Users/roberto/Applications/brainbits/m.MeshSurgery/math3D.c
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies454b4ef63712b941^db4d64f63712b941^---0#1#1#--18"Check dependencies36"463C6EEF-3AC4-4485-9EA3-DEE1CE0BE3D2-
+
+CCompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/i386/DocumentRAMON.o /Users/roberto/Applications/brainbits/RAMONES/StereotaxicEditorRAMON/DocumentRAMON.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/i386/Float3D.o /Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/i386/Int2D.o /Users/roberto/Applications/brainbits/m.MeshSurgery/Int2D.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/i386/Int3D.o /Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/i386/Mesh.o /Users/roberto/Applications/brainbits/m.MeshSurgery/Mesh.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/i386/MyDocument.o /Users/roberto/Applications/brainbits/m.MeshSurgery/MyDocument.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/i386/MyView.o /Users/roberto/Applications/brainbits/m.MeshSurgery/MyView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/i386/RAMON.o /Users/roberto/Applications/brainbits/RAMONES/StereotaxicEditorRAMON/RAMON.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/i386/Trackball.o /Users/roberto/Applications/brainbits/m.MeshSurgery/Trackball.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/i386/main.o /Users/roberto/Applications/brainbits/m.MeshSurgery/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/i386/math3D.o /Users/roberto/Applications/brainbits/m.MeshSurgery/math3D.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/DocumentRAMON.o /Users/roberto/Applications/brainbits/RAMONES/StereotaxicEditorRAMON/DocumentRAMON.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s420624375.603662
+e420624375.616444
+r0
+xCompileC
+xbuild/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/DocumentRAMON.o
+x/Users/roberto/Applications/brainbits/RAMONES/StereotaxicEditorRAMON/DocumentRAMON.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oclang: error: no such file or directory: '/Users/roberto/Applications/brainbits/RAMONES/StereotaxicEditorRAMON/DocumentRAMON.m'
+oclang: error: no input files
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Compile /Users/roberto/Applications/brainbits/RAMONES/StereotaxicEditorRAMON/DocumentRAMON.m251"CompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/DocumentRAMON.o /Users/roberto/Applications/brainbits/RAMONES/StereotaxicEditorRAMON/DocumentRAMON.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler98a49af73712b941^6f9b9df73712b941^-295"clang: error: no such file or directory: '/Users/roberto/Applications/brainbits/RAMONES/StereotaxicEditorRAMON/DocumentRAMON.m'clang: error: no input filesCommand /Applications/_Programming/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang failed with exit code 11(21%IDEActivityLogMessage2@137"Command /Applications/_Programming/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang failed with exit code 1-420624375#18446744073709551615#0#-2#--20"Apple LLVM 5.0 Error--0#0#1#-19%DVTDocumentLocation3@91"file:///Users/roberto/Applications/brainbits/RAMONES/StereotaxicEditorRAMON/DocumentRAMON.m00340c38dfffdf42^2861"CompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/DocumentRAMON.o /Users/roberto/Applications/brainbits/RAMONES/StereotaxicEditorRAMON/DocumentRAMON.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/roberto/Applications/brainbits/m.MeshSurgery    export LANG=en_US.US-ASCII    /Applications/_Programming/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/_Programming/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -fvisibility=hidden -Wno-sign-conversion -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/MeshSurgery.hmap -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release/include -I/Applications/_Programming/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/DerivedSources/x86_64 -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/DerivedSources -F/Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release -include /var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-hfcwbgmxlgwuqcgonyjyvvcozdvw/MeshSurgery_Prefix.pch -MMD -MT dependencies -MF /Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/DocumentRAMON.d --serialize-diagnostics /Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/DocumentRAMON.dia -c /Users/roberto/Applications/brainbits/RAMONES/StereotaxicEditorRAMON/DocumentRAMON.m -o /Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/DocumentRAMON.o36"38BBC305-B2C4-4913-BDAC-AE078652EA5F-
+b0E0471A3-75CA-4FD3-ABBE-4A727048EE80
+
+CCompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Float3D.o /Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s420624375.556016
+e420624375.619496
+r1
+xCompileC
+xbuild/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Float3D.o
+x/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m
+d/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h
+oIn file included from /Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m:9:
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:20:25: warning: 'x' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]
+o-(void)setCoords:(float)x:(float)y:(float)z;
+o                        ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:20:25: note: introduce a parameter name to make 'x' part of the selector
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:20:26: note: or insert whitespace before ':' to use 'x' as parameter name and have an empty entry in the selector
+o-(void)setCoords:(float)x:(float)y:(float)z;
+o                         ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:20:34: warning: 'y' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]
+o-(void)setCoords:(float)x:(float)y:(float)z;
+o                                 ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:20:34: note: introduce a parameter name to make 'y' part of the selector
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:20:35: note: or insert whitespace before ':' to use 'y' as parameter name and have an empty entry in the selector
+o-(void)setCoords:(float)x:(float)y:(float)z;
+o                                  ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:22:31: warning: 'x' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]
+o-(void)setSmoothCoords:(float)x:(float)y:(float)z;
+o                              ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:22:31: note: introduce a parameter name to make 'x' part of the selector
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:22:32: note: or insert whitespace before ':' to use 'x' as parameter name and have an empty entry in the selector
+o-(void)setSmoothCoords:(float)x:(float)y:(float)z;
+o                               ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:22:40: warning: 'y' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]
+o-(void)setSmoothCoords:(float)x:(float)y:(float)z;
+o                                       ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:22:40: note: introduce a parameter name to make 'y' part of the selector
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:22:41: note: or insert whitespace before ':' to use 'y' as parameter name and have an empty entry in the selector
+o-(void)setSmoothCoords:(float)x:(float)y:(float)z;
+o                                        ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m:29:25: warning: 'x' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]
+o-(void)setCoords:(float)x:(float)y:(float)z
+o                        ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m:29:25: note: introduce a parameter name to make 'x' part of the selector
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m:29:26: note: or insert whitespace before ':' to use 'x' as parameter name and have an empty entry in the selector
+o-(void)setCoords:(float)x:(float)y:(float)z
+o                         ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m:29:34: warning: 'y' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]
+o-(void)setCoords:(float)x:(float)y:(float)z
+o                                 ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m:29:34: note: introduce a parameter name to make 'y' part of the selector
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m:29:35: note: or insert whitespace before ':' to use 'y' as parameter name and have an empty entry in the selector
+o-(void)setCoords:(float)x:(float)y:(float)z
+o                                  ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m:39:31: warning: 'x' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]
+o-(void)setSmoothCoords:(float)x:(float)y:(float)z
+o                              ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m:39:31: note: introduce a parameter name to make 'x' part of the selector
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m:39:32: note: or insert whitespace before ':' to use 'x' as parameter name and have an empty entry in the selector
+o-(void)setSmoothCoords:(float)x:(float)y:(float)z
+o                               ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m:39:40: warning: 'y' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]
+o-(void)setSmoothCoords:(float)x:(float)y:(float)z
+o                                       ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m:39:40: note: introduce a parameter name to make 'y' part of the selector
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m:39:41: note: or insert whitespace before ':' to use 'y' as parameter name and have an empty entry in the selector
+o-(void)setSmoothCoords:(float)x:(float)y:(float)z
+o                                        ^
+o8 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Compile /Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m170"CompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Float3D.o Float3D.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler459c8ef73712b941^48dd9ef73712b941^-5397"In file included from /Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m:9:/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:20:25: warning: 'x' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]-(void)setCoords:(float)x:(float)y:(float)z;                        ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:20:25: note: introduce a parameter name to make 'x' part of the selector/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:20:26: note: or insert whitespace before ':' to use 'x' as parameter name and have an empty entry in the selector-(void)setCoords:(float)x:(float)y:(float)z;                         ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:20:34: warning: 'y' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]-(void)setCoords:(float)x:(float)y:(float)z;                                 ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:20:34: note: introduce a parameter name to make 'y' part of the selector/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:20:35: note: or insert whitespace before ':' to use 'y' as parameter name and have an empty entry in the selector-(void)setCoords:(float)x:(float)y:(float)z;                                  ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:22:31: warning: 'x' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]-(void)setSmoothCoords:(float)x:(float)y:(float)z;                              ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:22:31: note: introduce a parameter name to make 'x' part of the selector/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:22:32: note: or insert whitespace before ':' to use 'x' as parameter name and have an empty entry in the selector-(void)setSmoothCoords:(float)x:(float)y:(float)z;                               ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:22:40: warning: 'y' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]-(void)setSmoothCoords:(float)x:(float)y:(float)z;                                       ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:22:40: note: introduce a parameter name to make 'y' part of the selector/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:22:41: note: or insert whitespace before ':' to use 'y' as parameter name and have an empty entry in the selector-(void)setSmoothCoords:(float)x:(float)y:(float)z;                                        ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m:29:25: warning: 'x' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]-(void)setCoords:(float)x:(float)y:(float)z                        ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m:29:25: note: introduce a parameter name to make 'x' part of the selector/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m:29:26: note: or insert whitespace before ':' to use 'x' as parameter name and have an empty entry in the selector-(void)setCoords:(float)x:(float)y:(float)z                         ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m:29:34: warning: 'y' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]-(void)setCoords:(float)x:(float)y:(float)z                                 ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m:29:34: note: introduce a parameter name to make 'y' part of the selector/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m:29:35: note: or insert whitespace before ':' to use 'y' as parameter name and have an empty entry in the selector-(void)setCoords:(float)x:(float)y:(float)z                                  ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m:39:31: warning: 'x' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]-(void)setSmoothCoords:(float)x:(float)y:(float)z                              ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m:39:31: note: introduce a parameter name to make 'x' part of the selector/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m:39:32: note: or insert whitespace before ':' to use 'x' as parameter name and have an empty entry in the selector-(void)setSmoothCoords:(float)x:(float)y:(float)z                               ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m:39:40: warning: 'y' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]-(void)setSmoothCoords:(float)x:(float)y:(float)z                                       ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m:39:40: note: introduce a parameter name to make 'y' part of the selector/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m:39:41: note: or insert whitespace before ':' to use 'y' as parameter name and have an empty entry in the selector-(void)setSmoothCoords:(float)x:(float)y:(float)z                                        ^8 warnings generated.8(36%IDEClangDiagnosticActivityLogMessage2@82"'x' used as the name of the previous parameter rather than as part of the selector-420624375#18446744073709551615#0#3(2@86"In file included from /Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m:9:-420624375#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@68"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m0000000000000000^8#8#8#8#149#0#21"Apple LLVM 5.0 Notice--2@59"Introduce a parameter name to make 'x' part of the selector-420624375#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@68"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h0000000000000000^19#24#19#24#298#0#11"Parse Issue--2@100"Or insert whitespace before ':' to use 'x' as parameter name and have an empty entry in the selector-420624375#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@68"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h0000000000000000^19#25#19#25#299#0#11"Parse Issue--1#27"com.apple.dt.IDE.diagnostic3@68"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h0000000000000000^19#24#19#24#298#0#11"Parse Issue--2@82"'y' used as the name of the previous parameter rather than as part of the selector-420624375#18446744073709551615#0#3(2@86"In file included from /Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m:9:-420624375#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@68"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m0000000000000000^8#8#8#8#149#0#21"Apple LLVM 5.0 Notice--2@59"Introduce a parameter name to make 'y' part of the selector-420624375#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@68"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h0000000000000000^19#33#19#33#307#0#11"Parse Issue--2@100"Or insert whitespace before ':' to use 'y' as parameter name and have an empty entry in the selector-420624375#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@68"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h0000000000000000^19#34#19#34#308#0#11"Parse Issue--1#27"com.apple.dt.IDE.diagnostic3@68"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h0000000000000000^19#33#19#33#307#0#11"Parse Issue--2@82"'x' used as the name of the previous parameter rather than as part of the selector-420624375#18446744073709551615#0#3(2@86"In file included from /Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m:9:-420624375#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@68"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m0000000000000000^8#8#8#8#149#0#21"Apple LLVM 5.0 Notice--2@59"Introduce a parameter name to make 'x' part of the selector-420624375#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@68"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h0000000000000000^21#30#21#30#363#0#11"Parse Issue--2@100"Or insert whitespace before ':' to use 'x' as parameter name and have an empty entry in the selector-420624375#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@68"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h0000000000000000^21#31#21#31#364#0#11"Parse Issue--1#27"com.apple.dt.IDE.diagnostic3@68"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h0000000000000000^21#30#21#30#363#0#11"Parse Issue--2@82"'y' used as the name of the previous parameter rather than as part of the selector-420624375#18446744073709551615#0#3(2@86"In file included from /Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m:9:-420624375#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@68"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m0000000000000000^8#8#8#8#149#0#21"Apple LLVM 5.0 Notice--2@59"Introduce a parameter name to make 'y' part of the selector-420624375#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@68"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h0000000000000000^21#39#21#39#372#0#11"Parse Issue--2@100"Or insert whitespace before ':' to use 'y' as parameter name and have an empty entry in the selector-420624375#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@68"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h0000000000000000^21#40#21#40#373#0#11"Parse Issue--1#27"com.apple.dt.IDE.diagnostic3@68"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h0000000000000000^21#39#21#39#372#0#11"Parse Issue--2@82"'x' used as the name of the previous parameter rather than as part of the selector-420624375#18446744073709551615#0#2(2@59"Introduce a parameter name to make 'x' part of the selector-420624375#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@68"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m0000000000000000^28#24#28#24#365#0#11"Parse Issue--2@100"Or insert whitespace before ':' to use 'x' as parameter name and have an empty entry in the selector-420624375#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@68"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m0000000000000000^28#25#28#25#366#0#11"Parse Issue--1#27"com.apple.dt.IDE.diagnostic3@68"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m0000000000000000^28#24#28#24#365#0#11"Parse Issue--2@82"'y' used as the name of the previous parameter rather than as part of the selector-420624375#18446744073709551615#0#2(2@59"Introduce a parameter name to make 'y' part of the selector-420624375#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@68"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m0000000000000000^28#33#28#33#374#0#11"Parse Issue--2@100"Or insert whitespace before ':' to use 'y' as parameter name and have an empty entry in the selector-420624375#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@68"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m0000000000000000^28#34#28#34#375#0#11"Parse Issue--1#27"com.apple.dt.IDE.diagnostic3@68"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m0000000000000000^28#33#28#33#374#0#11"Parse Issue--2@82"'x' used as the name of the previous parameter rather than as part of the selector-420624375#18446744073709551615#0#2(2@59"Introduce a parameter name to make 'x' part of the selector-420624375#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@68"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m0000000000000000^38#30#38#30#479#0#11"Parse Issue--2@100"Or insert whitespace before ':' to use 'x' as parameter name and have an empty entry in the selector-420624375#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@68"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m0000000000000000^38#31#38#31#480#0#11"Parse Issue--1#27"com.apple.dt.IDE.diagnostic3@68"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m0000000000000000^38#30#38#30#479#0#11"Parse Issue--2@82"'y' used as the name of the previous parameter rather than as part of the selector-420624375#18446744073709551615#0#2(2@59"Introduce a parameter name to make 'y' part of the selector-420624375#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@68"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m0000000000000000^38#39#38#39#488#0#11"Parse Issue--2@100"Or insert whitespace before ':' to use 'y' as parameter name and have an empty entry in the selector-420624375#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@68"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m0000000000000000^38#40#38#40#489#0#11"Parse Issue--1#27"com.apple.dt.IDE.diagnostic3@68"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m0000000000000000^38#39#38#39#488#0#11"Parse Issue--0#0#1#-19%DVTDocumentLocation4@68"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m0000000000000000^2739"CompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Float3D.o Float3D.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/roberto/Applications/brainbits/m.MeshSurgery    export LANG=en_US.US-ASCII    /Applications/_Programming/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/_Programming/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -fvisibility=hidden -Wno-sign-conversion -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/MeshSurgery.hmap -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release/include -I/Applications/_Programming/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/DerivedSources/x86_64 -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/DerivedSources -F/Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release -include /var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-hfcwbgmxlgwuqcgonyjyvvcozdvw/MeshSurgery_Prefix.pch -MMD -MT dependencies -MF /Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Float3D.d --serialize-diagnostics /Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Float3D.dia -c /Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.m -o /Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Float3D.o36"203F57EE-83C3-46A5-9B5A-FC9A507985A2-
+b0E0471A3-75CA-4FD3-ABBE-4A727048EE80
+
+CCompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Int2D.o /Users/roberto/Applications/brainbits/m.MeshSurgery/Int2D.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s420624375.555407
+e420624375.601880
+r1
+xCompileC
+xbuild/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Int2D.o
+x/Users/roberto/Applications/brainbits/m.MeshSurgery/Int2D.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/roberto/Applications/brainbits/m.MeshSurgery/Int2D.m
+d/Users/roberto/Applications/brainbits/m.MeshSurgery/Int2D.h
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Int2D.m:24:22: warning: 'a' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]
+o-(void)setVerts:(int)a:(int)b
+o                     ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Int2D.m:24:22: note: introduce a parameter name to make 'a' part of the selector
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Int2D.m:24:23: note: or insert whitespace before ':' to use 'a' as parameter name and have an empty entry in the selector
+o-(void)setVerts:(int)a:(int)b
+o                      ^
+o1 warning generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Compile /Users/roberto/Applications/brainbits/m.MeshSurgery/Int2D.m166"CompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Int2D.o Int2D.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compilerdd438ef73712b941^a1689af73712b941^-620"/Users/roberto/Applications/brainbits/m.MeshSurgery/Int2D.m:24:22: warning: 'a' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]-(void)setVerts:(int)a:(int)b                     ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Int2D.m:24:22: note: introduce a parameter name to make 'a' part of the selector/Users/roberto/Applications/brainbits/m.MeshSurgery/Int2D.m:24:23: note: or insert whitespace before ':' to use 'a' as parameter name and have an empty entry in the selector-(void)setVerts:(int)a:(int)b                      ^1 warning generated.1(36%IDEClangDiagnosticActivityLogMessage2@82"'a' used as the name of the previous parameter rather than as part of the selector-420624375#18446744073709551615#0#2(2@59"Introduce a parameter name to make 'a' part of the selector-420624375#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@66"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Int2D.m0000000000000000^23#21#23#21#297#0#11"Parse Issue--2@100"Or insert whitespace before ':' to use 'a' as parameter name and have an empty entry in the selector-420624375#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@66"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Int2D.m0000000000000000^23#22#23#22#298#0#11"Parse Issue--1#27"com.apple.dt.IDE.diagnostic3@66"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Int2D.m0000000000000000^23#21#23#21#297#0#11"Parse Issue--0#0#1#-19%DVTDocumentLocation4@66"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Int2D.m0000000000000000^2727"CompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Int2D.o Int2D.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/roberto/Applications/brainbits/m.MeshSurgery    export LANG=en_US.US-ASCII    /Applications/_Programming/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/_Programming/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -fvisibility=hidden -Wno-sign-conversion -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/MeshSurgery.hmap -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release/include -I/Applications/_Programming/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/DerivedSources/x86_64 -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/DerivedSources -F/Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release -include /var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-hfcwbgmxlgwuqcgonyjyvvcozdvw/MeshSurgery_Prefix.pch -MMD -MT dependencies -MF /Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Int2D.d --serialize-diagnostics /Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Int2D.dia -c /Users/roberto/Applications/brainbits/m.MeshSurgery/Int2D.m -o /Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Int2D.o36"0661BDFF-C418-4259-B203-9EB01745F044-
+b0E0471A3-75CA-4FD3-ABBE-4A727048EE80
+
+CCompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Int3D.o /Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s420624375.555671
+e420624375.606005
+r1
+xCompileC
+xbuild/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Int3D.o
+x/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.m
+d/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h
+oIn file included from /Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.m:9:
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h:18:22: warning: 'a' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]
+o-(void)setVerts:(int)a:(int)b:(int)c;
+o                     ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h:18:22: note: introduce a parameter name to make 'a' part of the selector
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h:18:23: note: or insert whitespace before ':' to use 'a' as parameter name and have an empty entry in the selector
+o-(void)setVerts:(int)a:(int)b:(int)c;
+o                      ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h:18:29: warning: 'b' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]
+o-(void)setVerts:(int)a:(int)b:(int)c;
+o                            ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h:18:29: note: introduce a parameter name to make 'b' part of the selector
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h:18:30: note: or insert whitespace before ':' to use 'b' as parameter name and have an empty entry in the selector
+o-(void)setVerts:(int)a:(int)b:(int)c;
+o                             ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.m:25:22: warning: 'a' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]
+o-(void)setVerts:(int)a:(int)b:(int)c
+o                     ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.m:25:22: note: introduce a parameter name to make 'a' part of the selector
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.m:25:23: note: or insert whitespace before ':' to use 'a' as parameter name and have an empty entry in the selector
+o-(void)setVerts:(int)a:(int)b:(int)c
+o                      ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.m:25:29: warning: 'b' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]
+o-(void)setVerts:(int)a:(int)b:(int)c
+o                            ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.m:25:29: note: introduce a parameter name to make 'b' part of the selector
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.m:25:30: note: or insert whitespace before ':' to use 'b' as parameter name and have an empty entry in the selector
+o-(void)setVerts:(int)a:(int)b:(int)c
+o                             ^
+o4 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Compile /Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.m166"CompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Int3D.o Int3D.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler8b528ef73712b941^f86e9bf73712b941^-2591"In file included from /Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.m:9:/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h:18:22: warning: 'a' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]-(void)setVerts:(int)a:(int)b:(int)c;                     ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h:18:22: note: introduce a parameter name to make 'a' part of the selector/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h:18:23: note: or insert whitespace before ':' to use 'a' as parameter name and have an empty entry in the selector-(void)setVerts:(int)a:(int)b:(int)c;                      ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h:18:29: warning: 'b' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]-(void)setVerts:(int)a:(int)b:(int)c;                            ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h:18:29: note: introduce a parameter name to make 'b' part of the selector/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h:18:30: note: or insert whitespace before ':' to use 'b' as parameter name and have an empty entry in the selector-(void)setVerts:(int)a:(int)b:(int)c;                             ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.m:25:22: warning: 'a' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]-(void)setVerts:(int)a:(int)b:(int)c                     ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.m:25:22: note: introduce a parameter name to make 'a' part of the selector/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.m:25:23: note: or insert whitespace before ':' to use 'a' as parameter name and have an empty entry in the selector-(void)setVerts:(int)a:(int)b:(int)c                      ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.m:25:29: warning: 'b' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]-(void)setVerts:(int)a:(int)b:(int)c                            ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.m:25:29: note: introduce a parameter name to make 'b' part of the selector/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.m:25:30: note: or insert whitespace before ':' to use 'b' as parameter name and have an empty entry in the selector-(void)setVerts:(int)a:(int)b:(int)c                             ^4 warnings generated.4(36%IDEClangDiagnosticActivityLogMessage2@82"'a' used as the name of the previous parameter rather than as part of the selector-420624375#18446744073709551615#0#3(2@84"In file included from /Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.m:9:-420624375#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@66"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.m0000000000000000^8#8#8#8#147#0#21"Apple LLVM 5.0 Notice--2@59"Introduce a parameter name to make 'a' part of the selector-420624375#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@66"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h0000000000000000^17#21#17#21#255#0#11"Parse Issue--2@100"Or insert whitespace before ':' to use 'a' as parameter name and have an empty entry in the selector-420624375#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@66"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h0000000000000000^17#22#17#22#256#0#11"Parse Issue--1#27"com.apple.dt.IDE.diagnostic3@66"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h0000000000000000^17#21#17#21#255#0#11"Parse Issue--2@82"'b' used as the name of the previous parameter rather than as part of the selector-420624375#18446744073709551615#0#3(2@84"In file included from /Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.m:9:-420624375#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@66"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.m0000000000000000^8#8#8#8#147#0#21"Apple LLVM 5.0 Notice--2@59"Introduce a parameter name to make 'b' part of the selector-420624375#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@66"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h0000000000000000^17#28#17#28#262#0#11"Parse Issue--2@100"Or insert whitespace before ':' to use 'b' as parameter name and have an empty entry in the selector-420624375#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@66"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h0000000000000000^17#29#17#29#263#0#11"Parse Issue--1#27"com.apple.dt.IDE.diagnostic3@66"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h0000000000000000^17#28#17#28#262#0#11"Parse Issue--2@82"'a' used as the name of the previous parameter rather than as part of the selector-420624375#18446744073709551615#0#2(2@59"Introduce a parameter name to make 'a' part of the selector-420624375#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@66"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.m0000000000000000^24#21#24#21#307#0#11"Parse Issue--2@100"Or insert whitespace before ':' to use 'a' as parameter name and have an empty entry in the selector-420624375#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@66"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.m0000000000000000^24#22#24#22#308#0#11"Parse Issue--1#27"com.apple.dt.IDE.diagnostic3@66"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.m0000000000000000^24#21#24#21#307#0#11"Parse Issue--2@82"'b' used as the name of the previous parameter rather than as part of the selector-420624375#18446744073709551615#0#2(2@59"Introduce a parameter name to make 'b' part of the selector-420624375#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@66"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.m0000000000000000^24#28#24#28#314#0#11"Parse Issue--2@100"Or insert whitespace before ':' to use 'b' as parameter name and have an empty entry in the selector-420624375#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@66"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.m0000000000000000^24#29#24#29#315#0#11"Parse Issue--1#27"com.apple.dt.IDE.diagnostic3@66"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.m0000000000000000^24#28#24#28#314#0#11"Parse Issue--0#0#1#-19%DVTDocumentLocation4@66"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.m0000000000000000^2727"CompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Int3D.o Int3D.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/roberto/Applications/brainbits/m.MeshSurgery    export LANG=en_US.US-ASCII    /Applications/_Programming/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/_Programming/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -fvisibility=hidden -Wno-sign-conversion -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/MeshSurgery.hmap -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release/include -I/Applications/_Programming/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/DerivedSources/x86_64 -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/DerivedSources -F/Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release -include /var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-hfcwbgmxlgwuqcgonyjyvvcozdvw/MeshSurgery_Prefix.pch -MMD -MT dependencies -MF /Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Int3D.d --serialize-diagnostics /Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Int3D.dia -c /Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.m -o /Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Int3D.o36"1B2C9603-0A3B-4368-8A4E-DCDE1E09CE66-
+b0E0471A3-75CA-4FD3-ABBE-4A727048EE80
+
+CCompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Mesh.o /Users/roberto/Applications/brainbits/m.MeshSurgery/Mesh.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s420624375.556408
+e420624376.018205
+r1
+xCompileC
+xbuild/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Mesh.o
+x/Users/roberto/Applications/brainbits/m.MeshSurgery/Mesh.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/roberto/Applications/brainbits/m.MeshSurgery/Mesh.m
+d/Users/roberto/Applications/brainbits/m.MeshSurgery/Mesh.h
+d/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h
+d/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h
+d/Users/roberto/Applications/brainbits/m.MeshSurgery/Int2D.h
+d/Users/roberto/Applications/brainbits/m.MeshSurgery/math3D.h
+oIn file included from /Users/roberto/Applications/brainbits/m.MeshSurgery/Mesh.m:9:
+oIn file included from /Users/roberto/Applications/brainbits/m.MeshSurgery/Mesh.h:12:
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:20:25: warning: 'x' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]
+o-(void)setCoords:(float)x:(float)y:(float)z;
+o                        ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:20:25: note: introduce a parameter name to make 'x' part of the selector
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:20:26: note: or insert whitespace before ':' to use 'x' as parameter name and have an empty entry in the selector
+o-(void)setCoords:(float)x:(float)y:(float)z;
+o                         ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:20:34: warning: 'y' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]
+o-(void)setCoords:(float)x:(float)y:(float)z;
+o                                 ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:20:34: note: introduce a parameter name to make 'y' part of the selector
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:20:35: note: or insert whitespace before ':' to use 'y' as parameter name and have an empty entry in the selector
+o-(void)setCoords:(float)x:(float)y:(float)z;
+o                                  ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:22:31: warning: 'x' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]
+o-(void)setSmoothCoords:(float)x:(float)y:(float)z;
+o                              ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:22:31: note: introduce a parameter name to make 'x' part of the selector
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:22:32: note: or insert whitespace before ':' to use 'x' as parameter name and have an empty entry in the selector
+o-(void)setSmoothCoords:(float)x:(float)y:(float)z;
+o                               ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:22:40: warning: 'y' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]
+o-(void)setSmoothCoords:(float)x:(float)y:(float)z;
+o                                       ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:22:40: note: introduce a parameter name to make 'y' part of the selector
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:22:41: note: or insert whitespace before ':' to use 'y' as parameter name and have an empty entry in the selector
+o-(void)setSmoothCoords:(float)x:(float)y:(float)z;
+o                                        ^
+oIn file included from /Users/roberto/Applications/brainbits/m.MeshSurgery/Mesh.m:9:
+oIn file included from /Users/roberto/Applications/brainbits/m.MeshSurgery/Mesh.h:13:
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h:18:22: warning: 'a' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]
+o-(void)setVerts:(int)a:(int)b:(int)c;
+o                     ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h:18:22: note: introduce a parameter name to make 'a' part of the selector
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h:18:23: note: or insert whitespace before ':' to use 'a' as parameter name and have an empty entry in the selector
+o-(void)setVerts:(int)a:(int)b:(int)c;
+o                      ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h:18:29: warning: 'b' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]
+o-(void)setVerts:(int)a:(int)b:(int)c;
+o                            ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h:18:29: note: introduce a parameter name to make 'b' part of the selector
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h:18:30: note: or insert whitespace before ':' to use 'b' as parameter name and have an empty entry in the selector
+o-(void)setVerts:(int)a:(int)b:(int)c;
+o                             ^
+o6 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Compile /Users/roberto/Applications/brainbits/m.MeshSurgery/Mesh.m164"CompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Mesh.o Mesh.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler85958ef73712b941^47390cf83712b941^-4252"In file included from /Users/roberto/Applications/brainbits/m.MeshSurgery/Mesh.m:9:In file included from /Users/roberto/Applications/brainbits/m.MeshSurgery/Mesh.h:12:/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:20:25: warning: 'x' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]-(void)setCoords:(float)x:(float)y:(float)z;                        ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:20:25: note: introduce a parameter name to make 'x' part of the selector/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:20:26: note: or insert whitespace before ':' to use 'x' as parameter name and have an empty entry in the selector-(void)setCoords:(float)x:(float)y:(float)z;                         ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:20:34: warning: 'y' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]-(void)setCoords:(float)x:(float)y:(float)z;                                 ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:20:34: note: introduce a parameter name to make 'y' part of the selector/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:20:35: note: or insert whitespace before ':' to use 'y' as parameter name and have an empty entry in the selector-(void)setCoords:(float)x:(float)y:(float)z;                                  ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:22:31: warning: 'x' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]-(void)setSmoothCoords:(float)x:(float)y:(float)z;                              ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:22:31: note: introduce a parameter name to make 'x' part of the selector/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:22:32: note: or insert whitespace before ':' to use 'x' as parameter name and have an empty entry in the selector-(void)setSmoothCoords:(float)x:(float)y:(float)z;                               ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:22:40: warning: 'y' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]-(void)setSmoothCoords:(float)x:(float)y:(float)z;                                       ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:22:40: note: introduce a parameter name to make 'y' part of the selector/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:22:41: note: or insert whitespace before ':' to use 'y' as parameter name and have an empty entry in the selector-(void)setSmoothCoords:(float)x:(float)y:(float)z;                                        ^In file included from /Users/roberto/Applications/brainbits/m.MeshSurgery/Mesh.m:9:In file included from /Users/roberto/Applications/brainbits/m.MeshSurgery/Mesh.h:13:/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h:18:22: warning: 'a' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]-(void)setVerts:(int)a:(int)b:(int)c;                     ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h:18:22: note: introduce a parameter name to make 'a' part of the selector/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h:18:23: note: or insert whitespace before ':' to use 'a' as parameter name and have an empty entry in the selector-(void)setVerts:(int)a:(int)b:(int)c;                      ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h:18:29: warning: 'b' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]-(void)setVerts:(int)a:(int)b:(int)c;                            ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h:18:29: note: introduce a parameter name to make 'b' part of the selector/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h:18:30: note: or insert whitespace before ':' to use 'b' as parameter name and have an empty entry in the selector-(void)setVerts:(int)a:(int)b:(int)c;                             ^6 warnings generated.-0#0#1#-19%DVTDocumentLocation2@65"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Mesh.m0000000000000000^2721"CompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Mesh.o Mesh.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/roberto/Applications/brainbits/m.MeshSurgery    export LANG=en_US.US-ASCII    /Applications/_Programming/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/_Programming/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -fvisibility=hidden -Wno-sign-conversion -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/MeshSurgery.hmap -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release/include -I/Applications/_Programming/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/DerivedSources/x86_64 -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/DerivedSources -F/Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release -include /var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-hfcwbgmxlgwuqcgonyjyvvcozdvw/MeshSurgery_Prefix.pch -MMD -MT dependencies -MF /Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Mesh.d --serialize-diagnostics /Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Mesh.dia -c /Users/roberto/Applications/brainbits/m.MeshSurgery/Mesh.m -o /Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Mesh.o36"F3BD0536-B46A-46C0-88EC-58B81D713E0D-
+b0E0471A3-75CA-4FD3-ABBE-4A727048EE80
+
+CCompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/MyDocument.o /Users/roberto/Applications/brainbits/m.MeshSurgery/MyDocument.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s420624375.554680
+e420624375.616507
+r0
+xCompileC
+xbuild/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/MyDocument.o
+x/Users/roberto/Applications/brainbits/m.MeshSurgery/MyDocument.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Users/roberto/Applications/brainbits/m.MeshSurgery/MyDocument.m:9:
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/MyDocument.h:11:9: fatal error: 'DocumentRAMON.h' file not found
+o#import "DocumentRAMON.h"
+o        ^
+o1 error generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Compile /Users/roberto/Applications/brainbits/m.MeshSurgery/MyDocument.m176"CompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/MyDocument.o MyDocument.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compilerc30f8ef73712b941^dffd9df73712b941^-262"In file included from /Users/roberto/Applications/brainbits/m.MeshSurgery/MyDocument.m:9:/Users/roberto/Applications/brainbits/m.MeshSurgery/MyDocument.h:11:9: fatal error: 'DocumentRAMON.h' file not found#import "DocumentRAMON.h"        ^1 error generated.1(36%IDEClangDiagnosticActivityLogMessage2@32"'DocumentRAMON.h' file not found-420624375#18446744073709551615#0#1(2@89"In file included from /Users/roberto/Applications/brainbits/m.MeshSurgery/MyDocument.m:9:-420624375#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@71"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/MyDocument.m0000000000000000^8#8#8#8#149#0#21"Apple LLVM 5.0 Notice--2#27"com.apple.dt.IDE.diagnostic3@71"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/MyDocument.h0000000000000000^10#8#10#8#174#0#29"Lexical or Preprocessor Issue--0#0#1#-19%DVTDocumentLocation4@71"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/MyDocument.m0000000000000000^2757"CompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/MyDocument.o MyDocument.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/roberto/Applications/brainbits/m.MeshSurgery    export LANG=en_US.US-ASCII    /Applications/_Programming/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/_Programming/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -fvisibility=hidden -Wno-sign-conversion -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/MeshSurgery.hmap -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release/include -I/Applications/_Programming/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/DerivedSources/x86_64 -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/DerivedSources -F/Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release -include /var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-hfcwbgmxlgwuqcgonyjyvvcozdvw/MeshSurgery_Prefix.pch -MMD -MT dependencies -MF /Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/MyDocument.d --serialize-diagnostics /Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/MyDocument.dia -c /Users/roberto/Applications/brainbits/m.MeshSurgery/MyDocument.m -o /Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/MyDocument.o36"86FFDC75-2DA7-4D00-A1CA-D399FB517A0C-
+b0E0471A3-75CA-4FD3-ABBE-4A727048EE80
+
+CCompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/MyView.o /Users/roberto/Applications/brainbits/m.MeshSurgery/MyView.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s420624375.556830
+e420624375.817340
+r1
+xCompileC
+xbuild/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/MyView.o
+x/Users/roberto/Applications/brainbits/m.MeshSurgery/MyView.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/roberto/Applications/brainbits/m.MeshSurgery/MyView.m
+d/Users/roberto/Applications/brainbits/m.MeshSurgery/MyView.h
+d/Users/roberto/Applications/brainbits/m.MeshSurgery/Trackball.h
+d/Users/roberto/Applications/brainbits/m.MeshSurgery/Mesh.h
+d/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h
+d/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h
+d/Users/roberto/Applications/brainbits/m.MeshSurgery/Int2D.h
+d/Users/roberto/Applications/brainbits/m.MeshSurgery/math3D.h
+oIn file included from /Users/roberto/Applications/brainbits/m.MeshSurgery/MyView.m:1:
+oIn file included from /Users/roberto/Applications/brainbits/m.MeshSurgery/MyView.h:5:
+oIn file included from /Users/roberto/Applications/brainbits/m.MeshSurgery/Mesh.h:12:
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:20:25: warning: 'x' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]
+o-(void)setCoords:(float)x:(float)y:(float)z;
+o                        ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:20:25: note: introduce a parameter name to make 'x' part of the selector
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:20:26: note: or insert whitespace before ':' to use 'x' as parameter name and have an empty entry in the selector
+o-(void)setCoords:(float)x:(float)y:(float)z;
+o                         ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:20:34: warning: 'y' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]
+o-(void)setCoords:(float)x:(float)y:(float)z;
+o                                 ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:20:34: note: introduce a parameter name to make 'y' part of the selector
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:20:35: note: or insert whitespace before ':' to use 'y' as parameter name and have an empty entry in the selector
+o-(void)setCoords:(float)x:(float)y:(float)z;
+o                                  ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:22:31: warning: 'x' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]
+o-(void)setSmoothCoords:(float)x:(float)y:(float)z;
+o                              ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:22:31: note: introduce a parameter name to make 'x' part of the selector
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:22:32: note: or insert whitespace before ':' to use 'x' as parameter name and have an empty entry in the selector
+o-(void)setSmoothCoords:(float)x:(float)y:(float)z;
+o                               ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:22:40: warning: 'y' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]
+o-(void)setSmoothCoords:(float)x:(float)y:(float)z;
+o                                       ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:22:40: note: introduce a parameter name to make 'y' part of the selector
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:22:41: note: or insert whitespace before ':' to use 'y' as parameter name and have an empty entry in the selector
+o-(void)setSmoothCoords:(float)x:(float)y:(float)z;
+o                                        ^
+oIn file included from /Users/roberto/Applications/brainbits/m.MeshSurgery/MyView.m:1:
+oIn file included from /Users/roberto/Applications/brainbits/m.MeshSurgery/MyView.h:5:
+oIn file included from /Users/roberto/Applications/brainbits/m.MeshSurgery/Mesh.h:13:
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h:18:22: warning: 'a' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]
+o-(void)setVerts:(int)a:(int)b:(int)c;
+o                     ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h:18:22: note: introduce a parameter name to make 'a' part of the selector
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h:18:23: note: or insert whitespace before ':' to use 'a' as parameter name and have an empty entry in the selector
+o-(void)setVerts:(int)a:(int)b:(int)c;
+o                      ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h:18:29: warning: 'b' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]
+o-(void)setVerts:(int)a:(int)b:(int)c;
+o                            ^
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h:18:29: note: introduce a parameter name to make 'b' part of the selector
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h:18:30: note: or insert whitespace before ':' to use 'b' as parameter name and have an empty entry in the selector
+o-(void)setVerts:(int)a:(int)b:(int)c;
+o                             ^
+o6 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Compile /Users/roberto/Applications/brainbits/m.MeshSurgery/MyView.m168"CompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/MyView.o MyView.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compilerc79d8ef73712b941^b83dd1f73712b941^-4428"In file included from /Users/roberto/Applications/brainbits/m.MeshSurgery/MyView.m:1:In file included from /Users/roberto/Applications/brainbits/m.MeshSurgery/MyView.h:5:In file included from /Users/roberto/Applications/brainbits/m.MeshSurgery/Mesh.h:12:/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:20:25: warning: 'x' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]-(void)setCoords:(float)x:(float)y:(float)z;                        ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:20:25: note: introduce a parameter name to make 'x' part of the selector/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:20:26: note: or insert whitespace before ':' to use 'x' as parameter name and have an empty entry in the selector-(void)setCoords:(float)x:(float)y:(float)z;                         ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:20:34: warning: 'y' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]-(void)setCoords:(float)x:(float)y:(float)z;                                 ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:20:34: note: introduce a parameter name to make 'y' part of the selector/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:20:35: note: or insert whitespace before ':' to use 'y' as parameter name and have an empty entry in the selector-(void)setCoords:(float)x:(float)y:(float)z;                                  ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:22:31: warning: 'x' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]-(void)setSmoothCoords:(float)x:(float)y:(float)z;                              ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:22:31: note: introduce a parameter name to make 'x' part of the selector/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:22:32: note: or insert whitespace before ':' to use 'x' as parameter name and have an empty entry in the selector-(void)setSmoothCoords:(float)x:(float)y:(float)z;                               ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:22:40: warning: 'y' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]-(void)setSmoothCoords:(float)x:(float)y:(float)z;                                       ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:22:40: note: introduce a parameter name to make 'y' part of the selector/Users/roberto/Applications/brainbits/m.MeshSurgery/Float3D.h:22:41: note: or insert whitespace before ':' to use 'y' as parameter name and have an empty entry in the selector-(void)setSmoothCoords:(float)x:(float)y:(float)z;                                        ^In file included from /Users/roberto/Applications/brainbits/m.MeshSurgery/MyView.m:1:In file included from /Users/roberto/Applications/brainbits/m.MeshSurgery/MyView.h:5:In file included from /Users/roberto/Applications/brainbits/m.MeshSurgery/Mesh.h:13:/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h:18:22: warning: 'a' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]-(void)setVerts:(int)a:(int)b:(int)c;                     ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h:18:22: note: introduce a parameter name to make 'a' part of the selector/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h:18:23: note: or insert whitespace before ':' to use 'a' as parameter name and have an empty entry in the selector-(void)setVerts:(int)a:(int)b:(int)c;                      ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h:18:29: warning: 'b' used as the name of the previous parameter rather than as part of the selector [-Wmissing-selector-name]-(void)setVerts:(int)a:(int)b:(int)c;                            ^/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h:18:29: note: introduce a parameter name to make 'b' part of the selector/Users/roberto/Applications/brainbits/m.MeshSurgery/Int3D.h:18:30: note: or insert whitespace before ':' to use 'b' as parameter name and have an empty entry in the selector-(void)setVerts:(int)a:(int)b:(int)c;                             ^6 warnings generated.-0#0#1#-19%DVTDocumentLocation2@67"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/MyView.m0000000000000000^2733"CompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/MyView.o MyView.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/roberto/Applications/brainbits/m.MeshSurgery    export LANG=en_US.US-ASCII    /Applications/_Programming/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/_Programming/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -fvisibility=hidden -Wno-sign-conversion -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/MeshSurgery.hmap -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release/include -I/Applications/_Programming/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/DerivedSources/x86_64 -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/DerivedSources -F/Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release -include /var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-hfcwbgmxlgwuqcgonyjyvvcozdvw/MeshSurgery_Prefix.pch -MMD -MT dependencies -MF /Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/MyView.d --serialize-diagnostics /Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/MyView.dia -c /Users/roberto/Applications/brainbits/m.MeshSurgery/MyView.m -o /Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/MyView.o36"B22A3178-E44E-4F44-A920-83C6D798AFF3-
+b0E0471A3-75CA-4FD3-ABBE-4A727048EE80
+
+CCompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/RAMON.o /Users/roberto/Applications/brainbits/RAMONES/StereotaxicEditorRAMON/RAMON.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s420624375.606840
+e420624375.716791
+r0
+xCompileC
+xbuild/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/RAMON.o
+x/Users/roberto/Applications/brainbits/RAMONES/StereotaxicEditorRAMON/RAMON.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oclang: error: no such file or directory: '/Users/roberto/Applications/brainbits/RAMONES/StereotaxicEditorRAMON/RAMON.m'
+oclang: error: no input files
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Compile /Users/roberto/Applications/brainbits/RAMONES/StereotaxicEditorRAMON/RAMON.m235"CompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/RAMON.o /Users/roberto/Applications/brainbits/RAMONES/StereotaxicEditorRAMON/RAMON.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler72fd9bf73712b941^0e85b7f73712b941^-149"clang: error: no such file or directory: '/Users/roberto/Applications/brainbits/RAMONES/StereotaxicEditorRAMON/RAMON.m'clang: error: no input files-0#0#1#-19%DVTDocumentLocation2@83"file:///Users/roberto/Applications/brainbits/RAMONES/StereotaxicEditorRAMON/RAMON.m00340c38dfffdf42^2813"CompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/RAMON.o /Users/roberto/Applications/brainbits/RAMONES/StereotaxicEditorRAMON/RAMON.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/roberto/Applications/brainbits/m.MeshSurgery    export LANG=en_US.US-ASCII    /Applications/_Programming/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/_Programming/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -fvisibility=hidden -Wno-sign-conversion -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/MeshSurgery.hmap -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release/include -I/Applications/_Programming/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/DerivedSources/x86_64 -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/DerivedSources -F/Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release -include /var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-hfcwbgmxlgwuqcgonyjyvvcozdvw/MeshSurgery_Prefix.pch -MMD -MT dependencies -MF /Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/RAMON.d --serialize-diagnostics /Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/RAMON.dia -c /Users/roberto/Applications/brainbits/RAMONES/StereotaxicEditorRAMON/RAMON.m -o /Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/RAMON.o36"1774ED44-F854-4198-B0D2-A79995E264C8-
+b0E0471A3-75CA-4FD3-ABBE-4A727048EE80
+
+CCompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Trackball.o /Users/roberto/Applications/brainbits/m.MeshSurgery/Trackball.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s420624375.584246
+e420624375.716797
+r1
+xCompileC
+xbuild/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Trackball.o
+x/Users/roberto/Applications/brainbits/m.MeshSurgery/Trackball.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/roberto/Applications/brainbits/m.MeshSurgery/Trackball.m
+d/Users/roberto/Applications/brainbits/m.MeshSurgery/Trackball.h
+o/Users/roberto/Applications/brainbits/m.MeshSurgery/Trackball.m:112:13: warning: instance method '-rotateBy:' not found (return type defaults to 'id') [-Wobjc-method-access]
+o    [sender rotateBy:rot];
+o            ^~~~~~~~
+oIn file included from /Users/roberto/Applications/brainbits/m.MeshSurgery/Trackball.m:1:
+oIn file included from /Users/roberto/Applications/brainbits/m.MeshSurgery/MeshSurgery_Prefix.pch:6:
+oIn file included from /Applications/_Programming/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h:13:
+oIn file included from /Applications/_Programming/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h:15:
+oIn file included from /Applications/_Programming/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSActionCell.h:8:
+oIn file included from /Applications/_Programming/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSCell.h:10:
+oIn file included from /Applications/_Programming/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSText.h:8:
+o/Applications/_Programming/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSView.h:124:12: note: receiver is instance of class declared here
+o@interface NSView : NSResponder <NSAnimatablePropertyContainer, NSUserInterfaceItemIdentification, NSDraggingDestination, NSAppearanceCustomization>
+o           ^
+o1 warning generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/roberto/Applications/brainbits/m.MeshSurgery/Trackball.m174"CompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Trackball.o Trackball.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compilerdfa895f73712b941^2f89b7f73712b941^-1816"/Users/roberto/Applications/brainbits/m.MeshSurgery/Trackball.m:112:13: warning: instance method '-rotateBy:' not found (return type defaults to 'id') [-Wobjc-method-access]    [sender rotateBy:rot];            ^~~~~~~~In file included from /Users/roberto/Applications/brainbits/m.MeshSurgery/Trackball.m:1:In file included from /Users/roberto/Applications/brainbits/m.MeshSurgery/MeshSurgery_Prefix.pch:6:In file included from /Applications/_Programming/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h:13:In file included from /Applications/_Programming/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h:15:In file included from /Applications/_Programming/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSActionCell.h:8:In file included from /Applications/_Programming/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSCell.h:10:In file included from /Applications/_Programming/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSText.h:8:/Applications/_Programming/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSView.h:124:12: note: receiver is instance of class declared here@interface NSView : NSResponder <NSAnimatablePropertyContainer, NSUserInterfaceItemIdentification, NSDraggingDestination, NSAppearanceCustomization>           ^1 warning generated.-0#0#1#-19%DVTDocumentLocation2@70"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Trackball.m0000000000000000^2751"CompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Trackball.o Trackball.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/roberto/Applications/brainbits/m.MeshSurgery    export LANG=en_US.US-ASCII    /Applications/_Programming/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/_Programming/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -fvisibility=hidden -Wno-sign-conversion -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/MeshSurgery.hmap -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release/include -I/Applications/_Programming/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/DerivedSources/x86_64 -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/DerivedSources -F/Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release -include /var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-hfcwbgmxlgwuqcgonyjyvvcozdvw/MeshSurgery_Prefix.pch -MMD -MT dependencies -MF /Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Trackball.d --serialize-diagnostics /Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Trackball.dia -c /Users/roberto/Applications/brainbits/m.MeshSurgery/Trackball.m -o /Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/Trackball.o36"85B44E98-2E3D-4CDE-BB72-DF02379B708A-
+b0E0471A3-75CA-4FD3-ABBE-4A727048EE80
+
+CCompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/main.o /Users/roberto/Applications/brainbits/m.MeshSurgery/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s420624375.554896
+e420624375.581734
+r1
+xCompileC
+xbuild/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/main.o
+x/Users/roberto/Applications/brainbits/m.MeshSurgery/main.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/roberto/Applications/brainbits/m.MeshSurgery/main.m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Compile /Users/roberto/Applications/brainbits/m.MeshSurgery/main.m164"CompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/main.o main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compilerc0238ef73712b941^b7ec94f73712b941^---0#0#1#-19%DVTDocumentLocation2@65"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/main.m0000000000000000^2721"CompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/main.o main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/roberto/Applications/brainbits/m.MeshSurgery    export LANG=en_US.US-ASCII    /Applications/_Programming/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/_Programming/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -fvisibility=hidden -Wno-sign-conversion -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/MeshSurgery.hmap -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release/include -I/Applications/_Programming/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/DerivedSources/x86_64 -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/DerivedSources -F/Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release -include /var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-hfcwbgmxlgwuqcgonyjyvvcozdvw/MeshSurgery_Prefix.pch -MMD -MT dependencies -MF /Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/main.dia -c /Users/roberto/Applications/brainbits/m.MeshSurgery/main.m -o /Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/main.o36"DF758679-04CA-477B-A075-28E2548B226F-
+b0E0471A3-75CA-4FD3-ABBE-4A727048EE80
+
+CCompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/math3D.o /Users/roberto/Applications/brainbits/m.MeshSurgery/math3D.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s420624375.555127
+e420624375.716301
+r1
+xCompileC
+xbuild/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/math3D.o
+x/Users/roberto/Applications/brainbits/m.MeshSurgery/math3D.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/roberto/Applications/brainbits/m.MeshSurgery/math3D.c
+d/Users/roberto/Applications/brainbits/m.MeshSurgery/math3D.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Compile /Users/roberto/Applications/brainbits/m.MeshSurgery/math3D.c158"CompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/math3D.o math3D.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler7e368ef73712b941^5b60b7f73712b941^---0#0#1#-19%DVTDocumentLocation2@67"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/math3D.c0000000000000000^2520"CompileC build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/math3D.o math3D.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/roberto/Applications/brainbits/m.MeshSurgery    export LANG=en_US.US-ASCII    /Applications/_Programming/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -isysroot /Applications/_Programming/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -fvisibility=hidden -Wno-sign-conversion -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/MeshSurgery.hmap -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release/include -I/Applications/_Programming/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/DerivedSources/x86_64 -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/DerivedSources -F/Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release -include /var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-dfohhiwnbrqbuqcxtrkgveprcsbg/MeshSurgery_Prefix.pch -MMD -MT dependencies -MF /Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/math3D.d --serialize-diagnostics /Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/math3D.dia -c /Users/roberto/Applications/brainbits/m.MeshSurgery/math3D.c -o /Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/math3D.o36"E1E12219-E368-465D-9DA7-5CF5E3C9BAE5-
+b0E0471A3-75CA-4FD3-ABBE-4A727048EE80
+
+CCopyStringsFile /Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release/MeshSurgery.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+s420624374.394677
+e420624374.396619
+r1
+xCopyStringsFile
+x/Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release/MeshSurgery.app/Contents/Resources/English.lproj/InfoPlist.strings
+xEnglish.lproj/InfoPlist.strings
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Copy English.lproj/InfoPlist.strings128"CopyStringsFile build/Release/MeshSurgery.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.stringsec1665f63712b941^488965f63712b941^---0#0#1#-19%DVTDocumentLocation2@90"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/English.lproj/InfoPlist.strings0000000000000000^429"CopyStringsFile build/Release/MeshSurgery.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings    cd /Users/roberto/Applications/brainbits/m.MeshSurgery    builtin-copyStrings --validate --inputencoding utf-16 --outputencoding UTF-16 --outdir /Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release/MeshSurgery.app/Contents/Resources/English.lproj -- English.lproj/InfoPlist.strings36"6B96D589-A40B-49F5-9334-180EB42E67B2-
+b0E0471A3-75CA-4FD3-ABBE-4A727048EE80
+
+CCpResource English.lproj/Credits.rtf build/Release/MeshSurgery.app/Contents/Resources/English.lproj/Credits.rtf
+s420624374.394181
+e420624374.396297
+r1
+xCpResource
+xEnglish.lproj/Credits.rtf
+xbuild/Release/MeshSurgery.app/Contents/Resources/English.lproj/Credits.rtf
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Copy build/Release/MeshSurgery.app/Contents/Resources/English.lproj/Credits.rtf111"CpResource English.lproj/Credits.rtf build/Release/MeshSurgery.app/Contents/Resources/English.lproj/Credits.rtf01f764f63712b941^3f7465f63712b941^---0#0#1#-19%DVTDocumentLocation2@133"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release/MeshSurgery.app/Contents/Resources/English.lproj/Credits.rtf00340c38dfffdf42^615"CpResource English.lproj/Credits.rtf build/Release/MeshSurgery.app/Contents/Resources/English.lproj/Credits.rtf    cd /Users/roberto/Applications/brainbits/m.MeshSurgery    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/_Programming/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/roberto/Applications/brainbits/m.MeshSurgery/English.lproj/Credits.rtf /Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release/MeshSurgery.app/Contents/Resources/English.lproj36"008DC646-639E-43FB-9557-24C8577EEF4B-
+b0E0471A3-75CA-4FD3-ABBE-4A727048EE80
+
+CCreateUniversalBinary /Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release/MeshSurgery.app/Contents/MacOS/MeshSurgery normal x86_64\ i386
+r0
+
+CGenerateDSYMFile /Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release/MeshSurgery.app.dSYM /Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release/MeshSurgery.app/Contents/MacOS/MeshSurgery
+r0
+
+CLd /Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/i386/MeshSurgery normal i386
+r0
+
+CLd /Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/Objects-normal/x86_64/MeshSurgery normal x86_64
+r0
+
+CProcessInfoPlistFile /Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release/MeshSurgery.app/Contents/Info.plist /Users/roberto/Applications/brainbits/m.MeshSurgery/Info.plist
+s420624374.392591
+e420624374.393868
+r1
+xProcessInfoPlistFile
+x/Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release/MeshSurgery.app/Contents/Info.plist
+x/Users/roberto/Applications/brainbits/m.MeshSurgery/Info.plist
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Process /Users/roberto/Applications/brainbits/m.MeshSurgery/Info.plist81"ProcessInfoPlistFile build/Release/MeshSurgery.app/Contents/Info.plist Info.plist7f8964f63712b941^41d564f63712b941^---0#0#1#-19%DVTDocumentLocation2@69"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/Info.plist0000000000000000^487"ProcessInfoPlistFile build/Release/MeshSurgery.app/Contents/Info.plist Info.plist    cd /Users/roberto/Applications/brainbits/m.MeshSurgery    builtin-infoPlistUtility /Users/roberto/Applications/brainbits/m.MeshSurgery/Info.plist -genpkginfo /Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release/MeshSurgery.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release/MeshSurgery.app/Contents/Info.plist36"547443E1-D8D5-478E-8207-CA51C7A8B183-
+b0E0471A3-75CA-4FD3-ABBE-4A727048EE80
+
+CProcessPCH /Users/roberto/Library/Developer/Xcode/DerivedData/MeshSurgery-cmwdsutshdmmwgaegfwpurhhccqm/Index/PrecompiledHeaders/MeshSurgery_Prefix-bdkherxsvfkqxdcmdmduillgcnts_ast/MeshSurgery_Prefix.pch.pch MeshSurgery_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/roberto/Library/Developer/Xcode/DerivedData/MeshSurgery-cmwdsutshdmmwgaegfwpurhhccqm/Index/PrecompiledHeaders/MeshSurgery_Prefix-cwriluvfueuzvahezraiateouojy_ast/MeshSurgery_Prefix.pch.pch MeshSurgery_Prefix.pch normal i386 c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/roberto/Library/Developer/Xcode/DerivedData/MeshSurgery-cmwdsutshdmmwgaegfwpurhhccqm/Index/PrecompiledHeaders/MeshSurgery_Prefix-djrcuyfqkzulauflmqxvvvknbxcz_ast/MeshSurgery_Prefix.pch.pch MeshSurgery_Prefix.pch normal x86_64 c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/roberto/Library/Developer/Xcode/DerivedData/MeshSurgery-cmwdsutshdmmwgaegfwpurhhccqm/Index/PrecompiledHeaders/MeshSurgery_Prefix-eajyxgagosgvdtatxutfvkanmbip_ast/MeshSurgery_Prefix.pch.pch MeshSurgery_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-cveevhilelydvqewyvbybqewzdlt/MeshSurgery_Prefix.pch.pch MeshSurgery_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s420624374.831566
+e420624375.554130
+r1
+xProcessPCH
+x/var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-cveevhilelydvqewyvbybqewzdlt/MeshSurgery_Prefix.pch.pch
+xMeshSurgery_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/roberto/Applications/brainbits/m.MeshSurgery/MeshSurgery_Prefix.pch
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection33"Precompile MeshSurgery_Prefix.pch294"ProcessPCH /var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-cveevhilelydvqewyvbybqewzdlt/MeshSurgery_Prefix.pch.pch MeshSurgery_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler06f2d4f63712b941^cbdb8df73712b941^---0#0#1#-19%DVTDocumentLocation2@81"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/MeshSurgery_Prefix.pch0000000000000000^2854"ProcessPCH /var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-cveevhilelydvqewyvbybqewzdlt/MeshSurgery_Prefix.pch.pch MeshSurgery_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/roberto/Applications/brainbits/m.MeshSurgery    export LANG=en_US.US-ASCII    /Applications/_Programming/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/_Programming/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -fvisibility=hidden -Wno-sign-conversion -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/MeshSurgery.hmap -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release/include -I/Applications/_Programming/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/DerivedSources/i386 -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/DerivedSources -F/Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release --serialize-diagnostics /var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-cveevhilelydvqewyvbybqewzdlt/MeshSurgery_Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-cveevhilelydvqewyvbybqewzdlt/MeshSurgery_Prefix.pch.d -c /Users/roberto/Applications/brainbits/m.MeshSurgery/MeshSurgery_Prefix.pch -o /var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-cveevhilelydvqewyvbybqewzdlt/MeshSurgery_Prefix.pch.pch36"F8B011FE-44AD-4853-9575-B369B489C959-
+b0E0471A3-75CA-4FD3-ABBE-4A727048EE80
+
+CProcessPCH /var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-dfohhiwnbrqbuqcxtrkgveprcsbg/MeshSurgery_Prefix.pch.pch MeshSurgery_Prefix.pch normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s420624374.831262
+e420624374.848855
+r1
+xProcessPCH
+x/var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-dfohhiwnbrqbuqcxtrkgveprcsbg/MeshSurgery_Prefix.pch.pch
+xMeshSurgery_Prefix.pch
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/roberto/Applications/brainbits/m.MeshSurgery/MeshSurgery_Prefix.pch
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection33"Precompile MeshSurgery_Prefix.pch286"ProcessPCH /var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-dfohhiwnbrqbuqcxtrkgveprcsbg/MeshSurgery_Prefix.pch.pch MeshSurgery_Prefix.pch normal x86_64 c com.apple.compilers.llvm.clang.1_0.compilerecdcd4f63712b941^ba4cd9f63712b941^---0#0#1#-19%DVTDocumentLocation2@81"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/MeshSurgery_Prefix.pch0000000000000000^2647"ProcessPCH /var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-dfohhiwnbrqbuqcxtrkgveprcsbg/MeshSurgery_Prefix.pch.pch MeshSurgery_Prefix.pch normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/roberto/Applications/brainbits/m.MeshSurgery    export LANG=en_US.US-ASCII    /Applications/_Programming/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c-header -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -isysroot /Applications/_Programming/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -fvisibility=hidden -Wno-sign-conversion -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/MeshSurgery.hmap -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release/include -I/Applications/_Programming/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/DerivedSources/x86_64 -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/DerivedSources -F/Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release --serialize-diagnostics /var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-dfohhiwnbrqbuqcxtrkgveprcsbg/MeshSurgery_Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-dfohhiwnbrqbuqcxtrkgveprcsbg/MeshSurgery_Prefix.pch.d -c /Users/roberto/Applications/brainbits/m.MeshSurgery/MeshSurgery_Prefix.pch -o /var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-dfohhiwnbrqbuqcxtrkgveprcsbg/MeshSurgery_Prefix.pch.pch36"C6FF6A67-49AB-479B-B5F5-C35A54DD0EBC-
+b0E0471A3-75CA-4FD3-ABBE-4A727048EE80
+
+CProcessPCH /var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-fyzbqwilonjrhegsuxajimonhzcq/MeshSurgery_Prefix.pch.pch MeshSurgery_Prefix.pch normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
+s420624374.832008
+e420624374.848644
+r1
+xProcessPCH
+x/var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-fyzbqwilonjrhegsuxajimonhzcq/MeshSurgery_Prefix.pch.pch
+xMeshSurgery_Prefix.pch
+xnormal
+xi386
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/roberto/Applications/brainbits/m.MeshSurgery/MeshSurgery_Prefix.pch
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection33"Precompile MeshSurgery_Prefix.pch284"ProcessPCH /var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-fyzbqwilonjrhegsuxajimonhzcq/MeshSurgery_Prefix.pch.pch MeshSurgery_Prefix.pch normal i386 c com.apple.compilers.llvm.clang.1_0.compileree0ad5f63712b941^5b3fd9f63712b941^---0#0#1#-19%DVTDocumentLocation2@81"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/MeshSurgery_Prefix.pch0000000000000000^2641"ProcessPCH /var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-fyzbqwilonjrhegsuxajimonhzcq/MeshSurgery_Prefix.pch.pch MeshSurgery_Prefix.pch normal i386 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/roberto/Applications/brainbits/m.MeshSurgery    export LANG=en_US.US-ASCII    /Applications/_Programming/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c-header -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -isysroot /Applications/_Programming/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -fvisibility=hidden -Wno-sign-conversion -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/MeshSurgery.hmap -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release/include -I/Applications/_Programming/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/DerivedSources/i386 -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/DerivedSources -F/Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release --serialize-diagnostics /var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-fyzbqwilonjrhegsuxajimonhzcq/MeshSurgery_Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-fyzbqwilonjrhegsuxajimonhzcq/MeshSurgery_Prefix.pch.d -c /Users/roberto/Applications/brainbits/m.MeshSurgery/MeshSurgery_Prefix.pch -o /var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-fyzbqwilonjrhegsuxajimonhzcq/MeshSurgery_Prefix.pch.pch36"89D6EB81-1602-476A-A596-B3DE68D19040-
+b0E0471A3-75CA-4FD3-ABBE-4A727048EE80
+
+CProcessPCH /var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-hfcwbgmxlgwuqcgonyjyvvcozdvw/MeshSurgery_Prefix.pch.pch MeshSurgery_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s420624374.830933
+e420624375.520910
+r1
+xProcessPCH
+x/var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-hfcwbgmxlgwuqcgonyjyvvcozdvw/MeshSurgery_Prefix.pch.pch
+xMeshSurgery_Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/roberto/Applications/brainbits/m.MeshSurgery/MeshSurgery_Prefix.pch
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection33"Precompile MeshSurgery_Prefix.pch296"ProcessPCH /var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-hfcwbgmxlgwuqcgonyjyvvcozdvw/MeshSurgery_Prefix.pch.pch MeshSurgery_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compilerd2c7d4f63712b941^bc5b85f73712b941^---0#0#1#-19%DVTDocumentLocation2@81"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/MeshSurgery_Prefix.pch0000000000000000^2860"ProcessPCH /var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-hfcwbgmxlgwuqcgonyjyvvcozdvw/MeshSurgery_Prefix.pch.pch MeshSurgery_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/roberto/Applications/brainbits/m.MeshSurgery    export LANG=en_US.US-ASCII    /Applications/_Programming/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/_Programming/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -fvisibility=hidden -Wno-sign-conversion -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/MeshSurgery.hmap -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release/include -I/Applications/_Programming/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/DerivedSources/x86_64 -I/Users/roberto/Applications/brainbits/m.MeshSurgery/build/MeshSurgery.build/Release/MeshSurgery.build/DerivedSources -F/Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release --serialize-diagnostics /var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-hfcwbgmxlgwuqcgonyjyvvcozdvw/MeshSurgery_Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-hfcwbgmxlgwuqcgonyjyvvcozdvw/MeshSurgery_Prefix.pch.d -c /Users/roberto/Applications/brainbits/m.MeshSurgery/MeshSurgery_Prefix.pch -o /var/folders/w1/qnhkrsc97nddjm3vf00ppx940000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/MeshSurgery_Prefix-hfcwbgmxlgwuqcgonyjyvvcozdvw/MeshSurgery_Prefix.pch.pch36"6E9D82E9-5EBB-415C-82AF-97F4E17BA24D-
+b0E0471A3-75CA-4FD3-ABBE-4A727048EE80
+
+CStripNIB /Users/roberto/Applications/brainbits/m.MeshSurgery/English.lproj/MainMenu.nib
+s420624374.394296
+e420624374.818874
+r1
+xStripNIB
+x/Users/roberto/Applications/brainbits/m.MeshSurgery/English.lproj/MainMenu.nib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Processing /Users/roberto/Applications/brainbits/m.MeshSurgery/English.lproj/MainMenu.nib35"StripNIB English.lproj/MainMenu.nib05fa64f63712b941^62a2d1f63712b941^---0#0#1#-19%DVTDocumentLocation2@86"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/English.lproj/MainMenu.nib/0000000000000000^524"StripNIB English.lproj/MainMenu.nib    cd /Users/roberto/Applications/brainbits/m.MeshSurgery    export XCODE_DEVELOPER_USR_PATH=/Applications/_Programming/Xcode.app/Contents/Developer/usr/bin/..    /Applications/_Programming/Xcode.app/Contents/Developer/usr/bin/ibtool --strip /Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release/MeshSurgery.app/Contents/Resources/English.lproj/MainMenu.nib --output-format human-readable-text /Users/roberto/Applications/brainbits/m.MeshSurgery/English.lproj/MainMenu.nib36"F132848A-FD77-42AF-A5AB-8E6A919EF8A4-
+b0E0471A3-75CA-4FD3-ABBE-4A727048EE80
+
+CStripNIB /Users/roberto/Applications/brainbits/m.MeshSurgery/English.lproj/MyDocument.nib
+s420624374.394470
+e420624374.830406
+r1
+xStripNIB
+x/Users/roberto/Applications/brainbits/m.MeshSurgery/English.lproj/MyDocument.nib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Processing /Users/roberto/Applications/brainbits/m.MeshSurgery/English.lproj/MyDocument.nib37"StripNIB English.lproj/MyDocument.niba60b65f63712b941^e195d4f63712b941^---0#0#1#-19%DVTDocumentLocation2@88"file:///Users/roberto/Applications/brainbits/m.MeshSurgery/English.lproj/MyDocument.nib/0000000000000000^530"StripNIB English.lproj/MyDocument.nib    cd /Users/roberto/Applications/brainbits/m.MeshSurgery    export XCODE_DEVELOPER_USR_PATH=/Applications/_Programming/Xcode.app/Contents/Developer/usr/bin/..    /Applications/_Programming/Xcode.app/Contents/Developer/usr/bin/ibtool --strip /Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release/MeshSurgery.app/Contents/Resources/English.lproj/MyDocument.nib --output-format human-readable-text /Users/roberto/Applications/brainbits/m.MeshSurgery/English.lproj/MyDocument.nib36"36AE19CB-FBC8-4328-854E-1F5894379B33-
+b0E0471A3-75CA-4FD3-ABBE-4A727048EE80
+
+CTouch /Users/roberto/Applications/brainbits/m.MeshSurgery/build/Release/MeshSurgery.app
+r0
+
