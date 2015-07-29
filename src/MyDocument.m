@@ -443,4 +443,19 @@ void mobius(float x0, float y0, float th, float R, float *x1, float *y1)
 		}
 	 */
 }
+-(IBAction)readSmoothedVertices:(id)sender
+{
+    NSOpenPanel *open=[NSOpenPanel openPanel];
+    int			result;
+    NSString	*path;
+    
+    [open setAllowedFileTypes:[NSArray arrayWithObjects:@"ply",@"txt",nil]];
+    result=[open runModal];
+    if (result!=NSOKButton)
+        return;
+    
+    path=[[[open URLs] objectAtIndex:0] path];
+
+    [mesh readSmoothedVerticesFromPath:path];
+}
 @end

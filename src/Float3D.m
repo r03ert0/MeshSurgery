@@ -26,7 +26,7 @@
 {
 	return co;
 }
--(void)setCoords:(float)x:(float)y:(float)z
+-(void)setCoords:(float)x :(float)y :(float)z
 {
 	co[0]=x;
 	co[1]=y;
@@ -36,7 +36,7 @@
 {
 	return cos;
 }
--(void)setSmoothCoords:(float)x:(float)y:(float)z
+-(void)setSmoothCoords:(float)x :(float)y :(float)z
 {
 	cos[0]=x;
 	cos[1]=y;

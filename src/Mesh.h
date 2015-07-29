@@ -105,6 +105,8 @@
 -(void)writeToPath:(NSString*)path;
 -(void)readFromPath:(NSString*)path;
 -(void)readVerticesFromPath:(NSString*)path;
+-(void)readSmoothedVerticesFromPath:(NSString*)path;
+
 
 -(int)numberOfSelectedVertices;
 -(int)indexOfFirstSelectedVertex;

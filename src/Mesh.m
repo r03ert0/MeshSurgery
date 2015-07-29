@@ -1896,29 +1896,83 @@ void import_ply(float3D **p, int3D **t, int2D **e, int *np, int *nt, int *ne, ch
 }
 -(void)readVerticesFromPath:(NSString*)path
 {
-	char *str=(char*)[path UTF8String];
-	float3D	*p;
-	int3D	*t;
+    char *str=(char*)[path UTF8String];
+    float3D	*p;
+    int3D	*t;
     int2D   *e;
-	int		nptmp,nttmp,netmp,i;
-	
-	import_txt(&p,&t,&e,&nptmp,&nttmp,&netmp,str);
-	
-	if(nptmp!=[points count])
-	{
-		[[NSAlert	alertWithMessageText:@"Incorrect number of vertices"
-					defaultButton:nil alternateButton:nil otherButton:nil
-					informativeTextWithFormat:@"It is %i, and should be %i.\n",nptmp,(int)[points count]]
-			runModal];
-		return;
-	}
-	
-	for(i=0;i<nptmp;i++)
-		[[points objectAtIndex:i] setCoords:p[i].x:p[i].y:p[i].z];
-	
-	free(p);
-	free(t);
+    int		nptmp,nttmp,netmp,i;
+    
+    import_txt(&p,&t,&e,&nptmp,&nttmp,&netmp,str);
+    
+    if(nptmp!=[points count])
+    {
+        [[NSAlert	alertWithMessageText:@"Incorrect number of vertices"
+                         defaultButton:nil alternateButton:nil otherButton:nil
+             informativeTextWithFormat:@"It is %i, and should be %i.\n",nptmp,(int)[points count]]
+         runModal];
+        return;
+    }
+    
+    for(i=0;i<nptmp;i++)
+        [[points objectAtIndex:i] setCoords:p[i].x:p[i].y:p[i].z];
+    
+    free(p);
+    free(t);
     free(e);
+}
+-(void)readSmoothedVerticesFromPath:(NSString*)path
+{
+    char *str=(char*)[path UTF8String];
+    NSString *ext=[path pathExtension];
+    float3D	*p;
+    int3D	*t;
+    int2D   *e;
+    int		nptmp,nttmp,netmp,i;
+    float3D min0,max0,min1,max1,p1;
+    float   s;
+    
+    if([ext isEqualToString:@"txt"])
+        import_txt(&p,&t,&e,&nptmp,&nttmp,&netmp,str);
+    else
+    if([ext isEqualToString:@"ply"])
+        import_ply(&p,&t,&e,&nptmp,&nttmp,&netmp,str);
+    
+    if(nptmp!=[points count])
+    {
+        [[NSAlert	alertWithMessageText:@"Incorrect number of vertices"
+                         defaultButton:nil alternateButton:nil otherButton:nil
+             informativeTextWithFormat:@"It is %i, and should be %i.\n",nptmp,(int)[points count]]
+         runModal];
+        return;
+    }
+    
+    min0=max0=p[0];
+    min1=max1=*(float3D*)[[points objectAtIndex:0] co];
+    for(i=0;i<nptmp;i++) {
+        if(p[i].x<min0.x) min0.x=p[i].x;
+        if(p[i].y<min0.y) min0.y=p[i].y;
+        if(p[i].z<min0.z) min0.z=p[i].z;
+        if(p[i].x>max0.x) max0.x=p[i].x;
+        if(p[i].y>max0.y) max0.y=p[i].y;
+        if(p[i].z>max0.z) max0.z=p[i].z;
+
+        p1=*(float3D*)[[points objectAtIndex:i] co];
+        if(p1.x<min1.x) min1.x=p1.x;
+        if(p1.y<min1.y) min1.y=p1.y;
+        if(p1.z<min1.z) min1.z=p1.z;
+        if(p1.x>max1.x) max1.x=p1.x;
+        if(p1.y>max1.y) max1.y=p1.y;
+        if(p1.z>max1.z) max1.z=p1.z;
+    }
+    s=(max1.x-min1.x)*(max1.y-min1.y)*(max1.z-min1.z) / ((max0.x-min0.x)*(max0.y-min0.y)*(max0.z-min0.z));
+    s=pow(s,0.33333);
+    
+    for(i=0;i<nptmp;i++)
+        [[points objectAtIndex:i] setSmoothCoords:p[i].x*s:p[i].y*s:p[i].z*s];
+    
+    free(p);
+    free(t);
+    //free(e);
 }
 -(int)numberOfSelectedVertices
 {
@@ -2103,4 +2157,101 @@ void mobius2(float x0, float y0, float th, float R, float *x1, float *y1)
 {
 	angle2=a;
 }
-@end
+#pragma mark -
+#pragma mark -
+/*
+ * dijkstra.js
+ *
+ * Dijkstra's single source shortest path algorithm in JavaScript.
+ *
+ * Cameron McCormack <cam (at) mcc.id.au>
+ *
+ * Permission is hereby granted to use, copy, modify and distribute this
+ * code for any purpose, without fee.
+ *
+ * Initial version: October 21, 2004
+ */
+
+/*
+-(void)shortestPath:(int)startVertex
+{
+    char    *done;
+    float   *pathLengths;
+    int     *predecesors;
+    int     i,j,Infinity=1000;
+    
+    done=(char*)calloc([points count],1);
+    pathLengths=(float*)calloc([points count],sizeof(float));
+    predecesors=(int*)calloc([points count],sizeof(int));
+    done[startVertex] = true;
+    
+    
+    for(i=0;i<[points count];i++)
+    {
+        pathLengths[i] = edges[startVertex][i];
+        if (edges[startVertex][i] != Infinity) {
+            predecessors[i] = startVertex;
+        }
+    }
+    pathLengths[startVertex]=0;
+    for(i=0;i<[points count]-1;i++)
+    {
+        int closest=-1;
+        float closestDistance = Infinity;
+        for (var j = 0; j < [points count]; j++) {
+            if (!done[j] && pathLengths[j] < closestDistance) {
+                closestDistance = pathLengths[j];
+                closest = j;
+            }
+        }
+        done[closest] = true;
+        for (var j = 0; j < [points count]; j++) {
+            if (!done[j]) {
+                var possiblyCloserDistance = pathLengths[closest] + edges[closest][j];
+                if (possiblyCloserDistance < pathLengths[j]) {
+                    pathLengths[j] = possiblyCloserDistance;
+                    predecessors[j] = closest;
+                }
+            }
+        }
+    }
+    return { "startVertex": startVertex,
+        "pathLengths": pathLengths,
+        "predecessors": predecessors };
+}
+
+function constructPath(shortestPathInfo, endVertex) {
+    var path = [];
+    while (endVertex != shortestPathInfo.startVertex) {
+        path.unshift(endVertex);
+        endVertex = shortestPathInfo.predecessors[endVertex];
+    }
+    return path;
+}
+
+// Example //////////////////////////////////////////////////////////////////
+
+// The adjacency matrix defining the graph.
+var _ = Infinity;
+var e = [
+         [ _, _, _, _, _, _, _, _, 4, 2, 3 ],
+         [ _, _, 5, 2, 2, _, _, _, _, _, _ ],
+         [ _, 5, _, _, _, 1, 4, _, _, _, _ ],
+         [ _, 2, _, _, 3, 6, _, 3, _, _, _ ],
+         [ _, 2, _, 3, _, _, _, 4, 3, _, _ ],
+         [ _, _, 1, 6, _, _, 2, 5, _, _, _ ],
+         [ _, _, 4, _, _, 2, _, 5, _, _, 3 ],
+         [ _, _, _, 3, 4, 5, 5, _, 3, 2, 4 ],
+         [ 4, _, _, _, 3, _, _, 3, _, 3, _ ],
+         [ 2, _, _, _, _, _, _, 2, 3, _, 3 ],
+         [ 3, _, _, _, _, _, 3, 4, _, 3, _ ]
+         ];
+
+// Compute the shortest paths from vertex number 1 to each other vertex
+// in the graph.
+var shortestPathInfo = shortestPath(e, 11, 1);
+
+// Get the shortest path from vertex 1 to vertex 6.
+var path1to6 = constructPath(shortestPathInfo, 6);
+*/
+ @end
