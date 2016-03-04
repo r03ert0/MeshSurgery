@@ -19,7 +19,6 @@
     GLuint attribs[] = 
     {
             NSOpenGLPFANoRecovery,
-            NSOpenGLPFAWindow,
             NSOpenGLPFAAccelerated,
             NSOpenGLPFADoubleBuffer,
             NSOpenGLPFAColorSize, 24,

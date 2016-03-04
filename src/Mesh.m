@@ -15,7 +15,8 @@
 	edges=[[NSMutableArray new] retain];
 	triangles=[[NSMutableArray new] retain];
 	points=[[NSMutableArray new] retain];
-	colours=[[NSMutableArray new] retain];
+    colours=[[NSMutableArray new] retain];
+    neighbours=[[NSMutableArray new] retain];
 
 	// initialize cursor
 	cp[0]=(float3D){1,1,-1};	// cursor vertices
@@ -88,7 +89,11 @@
 }
 -(NSMutableArray*)colours
 {
-	return colours;
+    return colours;
+}
+-(NSMutableArray*)neighbours
+{
+    return neighbours;
 }
 -(int)selectedCount
 {
@@ -193,7 +198,7 @@
 			nn=0;
 			for(j=0;j<[points count];j++)
 			{
-				if(fabs(class[pointClass[j]])==class[i])
+				if(abs(class[pointClass[j]])==class[i])
 				{
 					pointClass[j]=n;
 					nn++;
@@ -907,59 +912,327 @@ int compareEdges (const void *a, const void *b)
 		[t setVerts:ve[0]:ve[2]:ve[1]];
 	}
 }
--(void)selectNonmanifold
+-(void)selectNonmanifoldVerts
 {
-	int		i,j,n;
-	int3D	*e;
-	int		*t;
-	
-	[self cleanMesh];
-	[self depth];
-	
-	// make a list of all edges
-	e=(int3D*)calloc([triangles count]*3,sizeof(int3D));
-	for(i=0;i<[triangles count];i++)
-	{
-		t=[[triangles objectAtIndex:i] ve];
-		for(j=0;j<3;j++)
-		{
-			if(t[j]<t[(j+1)%3])
-			{
-				e[3*i+j].a=t[j];
-				e[3*i+j].b=t[(j+1)%3];
-				e[3*i+j].c=i;
-			}
-			else
-			{
-				e[3*i+j].a=t[(j+1)%3];
-				e[3*i+j].b=t[j];
-				e[3*i+j].c=i;
-			}
-		}
-	}
-	
-	// sort edges
-	qsort(e,[triangles count]*3,sizeof(int3D),compareEdges);
-	
-	// count nonmanifold edges
-	i=0;
-	j=0;
-	n=0;
-	do
-	{
-		if(e[j].a==e[j+1].a && e[j].b==e[j+1].b)
-			j+=2;
-		else
-		{
-			[(Float3D*)[points objectAtIndex:e[j].a] setSelected:YES];
-			[(Float3D*)[points objectAtIndex:e[j].b] setSelected:YES];
-			j++;
-			n++;
-		}
-	}
-	while(j<[triangles count]*3);
-	printf("nonmanifold edges:%i\n",n);
-	free(e);
+    int3D   *e;
+    int e_length=0;
+    int i,j,k,found,loop;
+    int *t1,t1_length;
+    int *i1,i1_length;
+    NSMutableArray *ne;
+    int *t;
+
+    [self configureNeighbours];
+
+    printf("non manifold vertices\n");
+    for(i=0;i<[points count];i++)
+    {
+        // store all the edges in the triangles connected to vertex p[i]
+        // that do not contain vertex p[i]
+        ne=[neighbours objectAtIndex:i];
+        e=(int3D*)calloc([ne count]*3,sizeof(int3D));
+        e_length=0;
+        ne=[neighbours objectAtIndex:i];
+        for(j=0;j<[ne count];j++)
+        {
+            t=[[triangles objectAtIndex:[[ne objectAtIndex:j] intValue]] ve];
+            if(t[0]==i)
+                e[e_length++]=(int3D){t[1],t[2],[(NSNumber*)[ne objectAtIndex:j] intValue]};
+            else
+            if(t[1]==i)
+                e[e_length++]=(int3D){t[2],t[0],[(NSNumber*)[ne objectAtIndex:j] intValue]};
+            else
+                e[e_length++]=(int3D){t[0],t[1],[(NSNumber*)[ne objectAtIndex:j] intValue]};
+        }
+        /*
+         printf("p[%i]: ",i); for(j=0;j<e_length;j++) printf("(%i,%i) ",e[j].a,e[j].b); printf("\n");
+         */
+        // scan the list of edges, if 2 edges share a vertex,
+        // delete the vertex and connect the points directly.
+        // at the end, there should be only one edge remaining
+        // connecting one vertex to itself. All remaining a-a
+        // edges represent supplementary loops, then, non-manifoldness
+        j=0;
+        i1=(int*)calloc([ne count],sizeof(int));
+        t1=(int*)calloc([ne count]*3,sizeof(int));
+        i1_length=0;
+        t1_length=0;
+        i1[i1_length++]=t1_length;
+        t1[t1_length++]=e[j].c;
+        while(j<e_length-1)
+        {
+            loop=0;
+            k=j+1;
+            while(k<e_length)
+            {
+                found=1;
+                if(e[j].a==e[k].a)
+                    e[j]=(int3D){e[j].b,e[k].b,e[j].c};
+                else if(e[j].a==e[k].b)
+                    e[j]=(int3D){e[j].b,e[k].a,e[j].c};
+                else if(e[j].b==e[k].a)
+                    e[j]=(int3D){e[j].a,e[k].b,e[j].c};
+                else if(e[j].b==e[k].b)
+                    e[j]=(int3D){e[j].a,e[k].a,e[j].c};
+                else
+                    found=0;
+                if(found)
+                {
+                    t1[t1_length++]=e[k].c; //printf("t[%i] ",e[k].c);
+                    e[k]=e[--e_length];
+                    if(e[j].a==e[j].b)
+                    {
+                        //printf("\n");
+                        loop=1;
+                        j++;
+                        if(j<e_length)
+                        {
+                            i1[i1_length++]=t1_length;
+                            t1[t1_length++]=e[j].c; //printf("  t[%i] ",e[j].c);
+                        }
+                        break;
+                    }
+                }
+                else
+                    k++;
+            }
+        }
+        // printf("p[%i]: ",i); for(j=0;j<e_length;j++) printf("(%i,%i) ",e[j].a,e[j].b); printf("\n");
+        free(e);
+        free(t1);
+        free(i1);
+        
+        [(Float3D*)[points objectAtIndex:i] setSelected:YES];
+        if([ne count]==0)      printf("WARNING, %i is isolated: remove it\n",i);
+        else if([ne count]==1) printf("WARNING, %i is dangling: remove the the vertex and its triangle\n",i);
+        else if(loop==0)    printf("WARNING, %i is in a degenerate region: examine more in detail\n",i);
+        else if(e_length>1) printf("WARNING, %i has %i loops: split the vertex into %i vertices and remesh\n",i,e_length,e_length);
+        else
+        {
+            [(Float3D*)[points objectAtIndex:i] setSelected:NO];
+        }
+    }
+}
+
+-(void)selectNonmanifoldEds
+{
+    int		i,j,n;
+    int3D	*e;
+    int		*t;
+    
+    [self cleanMesh];
+    [self depth];
+    
+    // make a list of all edges
+    e=(int3D*)calloc([triangles count]*3,sizeof(int3D));
+    for(i=0;i<[triangles count];i++)
+    {
+        t=[[triangles objectAtIndex:i] ve];
+        for(j=0;j<3;j++)
+        {
+            if(t[j]<t[(j+1)%3])
+            {
+                e[3*i+j].a=t[j];
+                e[3*i+j].b=t[(j+1)%3];
+                e[3*i+j].c=i;
+            }
+            else
+            {
+                e[3*i+j].a=t[(j+1)%3];
+                e[3*i+j].b=t[j];
+                e[3*i+j].c=i;
+            }
+        }
+    }
+    
+    // sort edges
+    qsort(e,[triangles count]*3,sizeof(int3D),compareEdges);
+    
+    // count nonmanifold edges
+    i=0;
+    j=0;
+    n=0;
+    do
+    {
+        if(e[j].a==e[j+1].a && e[j].b==e[j+1].b)
+            j+=2;
+        else
+        {
+            [(Float3D*)[points objectAtIndex:e[j].a] setSelected:YES];
+            [(Float3D*)[points objectAtIndex:e[j].b] setSelected:YES];
+            j++;
+            n++;
+        }
+    }
+    while(j<[triangles count]*3);
+    printf("nonmanifold edges:%i\n",n);
+    free(e);
+}
+-(int)selectNonmanifoldTris
+{
+    int   i,j,found;
+    int   *t,*t1;
+    NSMutableArray  *ne;
+    Int3D *tr;
+    
+    [self configureNeighbours];
+
+
+    found=0;
+    for(i=0;i<[triangles count];i++)
+    {
+        t=[[triangles objectAtIndex:i] ve];
+        ne=[neighbours objectAtIndex:t[0]];
+        for(j=0;j<[ne count];j++)
+            if([(NSNumber*)[ne objectAtIndex:j] intValue]!=i)
+            {
+                tr=(Int3D*)[triangles objectAtIndex:[(NSNumber*)[ne objectAtIndex:j] intValue]];
+                t1=[tr ve];
+                if((t1[0]==t[0]||t1[0]==t[1]||t1[0]==t[2])&&
+                   (t1[1]==t[0]||t1[1]==t[1]||t1[1]==t[2])&&
+                   (t1[2]==t[0]||t1[2]==t[1]||t1[2]==t[2]))
+                {
+                    found++;
+                    printf("triangle %i doubles triangle %i\n",i,[(NSNumber*)[ne objectAtIndex:j] intValue]);
+                    [(Float3D*)[points objectAtIndex:t[0]] setSelected:YES];
+                    [(Float3D*)[points objectAtIndex:t[1]] setSelected:YES];
+                    [(Float3D*)[points objectAtIndex:t[2]] setSelected:YES];
+                    break;
+                }
+            }
+    }
+    printf("%i double triangles found\n",found/2);
+    return found/2;
+}
+-(void)splitVertex
+{
+    int3D   *e;
+    int e_length=0;
+    int i,j,k,found,loop;
+    int *t1,t1_length;
+    int *i1,i1_length;
+    NSMutableArray *ne;
+    int *t;
+    Int3D *obj;
+    float *p;
+    
+    [self configureNeighbours];
+    
+    for(i=0;i<[points count];i++)
+        if([(Float3D*)[points objectAtIndex:i] selected]==YES)
+            break;
+    if(i==[points count])
+    {
+        printf("You have to select a vertex to split\n");
+        return;
+    }
+    
+    printf("Splitting vertex %i\n",i);
+    p=[(Float3D*)[points objectAtIndex:i] co];
+    
+    // store all the edges in the triangles connected to vertex p[i]
+    // that do not contain vertex p[i]
+    ne=[neighbours objectAtIndex:i];
+    e=(int3D*)calloc([ne count]*3,sizeof(int3D));
+    e_length=0;
+    ne=[neighbours objectAtIndex:i];
+    for(j=0;j<[ne count];j++)
+    {
+        t=[(Int3D*)[triangles objectAtIndex:[[ne objectAtIndex:j] intValue]] ve];
+        if(t[0]==i)
+            e[e_length++]=(int3D){t[1],t[2],[(NSNumber*)[ne objectAtIndex:j] intValue]};
+        else
+        if(t[1]==i)
+            e[e_length++]=(int3D){t[2],t[0],[(NSNumber*)[ne objectAtIndex:j] intValue]};
+        else
+            e[e_length++]=(int3D){t[0],t[1],[(NSNumber*)[ne objectAtIndex:j] intValue]};
+    }
+
+    // scan the list of edges, if 2 edges share a vertex,
+    // delete the vertex and connect the points directly.
+    // at the end, there should be only one edge remaining
+    // connecting one vertex to itself. All remaining a-a
+    // edges represent supplementary loops, then, non-manifoldness
+    j=0;
+    i1=(int*)calloc([ne count],sizeof(int));
+    t1=(int*)calloc([ne count]*3,sizeof(int));
+    i1_length=0;
+    t1_length=0;
+    i1[i1_length++]=t1_length;
+    t1[t1_length++]=e[j].c;
+    while(j<e_length-1)
+    {
+        loop=0;
+        k=j+1;
+        while(k<e_length)
+        {
+            found=1;
+            if(e[j].a==e[k].a)
+                e[j]=(int3D){e[j].b,e[k].b,e[j].c};
+            else if(e[j].a==e[k].b)
+                e[j]=(int3D){e[j].b,e[k].a,e[j].c};
+            else if(e[j].b==e[k].a)
+                e[j]=(int3D){e[j].a,e[k].b,e[j].c};
+            else if(e[j].b==e[k].b)
+                e[j]=(int3D){e[j].a,e[k].a,e[j].c};
+            else
+                found=0;
+            if(found)
+            {
+                t1[t1_length++]=e[k].c; //printf("t[%i] ",e[k].c);
+                e[k]=e[--e_length];
+                if(e[j].a==e[j].b)
+                {
+                    //printf("\n");
+                    loop=1;
+                    j++;
+                    if(j<e_length)
+                    {
+                        i1[i1_length++]=t1_length;
+                        t1[t1_length++]=e[j].c; //printf("  t[%i] ",e[j].c);
+                    }
+                    break;
+                }
+            }
+            else
+                k++;
+        }
+    }
+    // printf("p[%i]: ",i); for(j=0;j<e_length;j++) printf("(%i,%i) ",e[j].a,e[j].b); printf("\n");
+    free(e);
+    
+    if([ne count]==0)       printf("WARNING, %i is isolated: remove it\n",i);
+    else if([ne count]==1)  printf("WARNING, %i is dangling: remove the the vertex and its triangle\n",i);
+    else if(loop==0)        printf("WARNING, %i is in a degenerate region: examine more in detail\n",i);
+    else if(e_length>1)
+    {
+        printf("WARNING, %i has %i loops: split the vertex into %i vertices and remesh\n",i,e_length,e_length);
+        
+        [self addVertex:(float3D){p[0],p[1],p[2]}];
+        
+        k=1;
+        for(j=0;j<t1_length;j++)
+        {
+            obj=(Int3D*)[triangles objectAtIndex:t1[j]];
+            t=[obj ve];
+            if(i1[k]==j)
+            {
+                printf(" | ");
+                k++;
+            }
+            printf("%i ",t1[j]);
+            if(k>1)
+            {
+                if(t[0]==i)   t[0]=[points count]-1;
+                if(t[1]==i)   t[1]=[points count]-1;
+                if(t[2]==i)   t[2]=[points count]-1;
+                [obj setVerts:t[0] :t[1] :t[2]];
+            }
+        }
+        printf("\n");
+    }
+    free(t1);
+    free(i1);
 }
 -(void)configureSmooth
 {
@@ -1082,6 +1355,8 @@ int compareEdges (const void *a, const void *b)
         while(obj=[e nextObject])
         {
             tr=[obj ve];
+            if(tr[0]<0||tr[1]<0||tr[2]<0)
+                continue;
             
             area0=triangle_perimetre([self interp:[points objectAtIndex:tr[0]]],
                                 [self interp:[points objectAtIndex:tr[1]]],
@@ -1089,7 +1364,7 @@ int compareEdges (const void *a, const void *b)
             area1=triangle_perimetre(*(float3D*)[[points objectAtIndex:tr[0]] co],
                                 *(float3D*)[[points objectAtIndex:tr[1]] co],
                                 *(float3D*)[[points objectAtIndex:tr[2]] co]);
-            g=pow(area0/area1,2);
+            g=1;//pow(area0/area1,2);
             
             for(j=0;j<3;j++)
             {
@@ -1104,6 +1379,7 @@ int compareEdges (const void *a, const void *b)
         }
         glEnd();
     }
+    [self depth];
 }
 /*
 -(void)drawSurface
@@ -1570,6 +1846,9 @@ int compareEdges (const void *a, const void *b)
 	float		nump=[points count];
 	Float3D		*co;
 
+    if(nump==0)
+        return;
+    
 	o=(float3D){0,0,0};
 	p=[(Float3D*)[points objectAtIndex:0] co];
 	pmin=pmax=*(float3D*)p;
@@ -1714,11 +1993,11 @@ int compareEdges (const void *a, const void *b)
     fprintf(f,"ply\n");
     fprintf(f,"format ascii 1.0\n");
     fprintf(f,"comment meshconvert, R. Toro 2010\n");
-    fprintf(f,"element vertex %i\n",[points count]);
+    fprintf(f,"element vertex %i\n",(int)[points count]);
     fprintf(f,"property float x\n");
     fprintf(f,"property float y\n");
     fprintf(f,"property float z\n");
-    fprintf(f,"element face %i\n",[triangles count]);
+    fprintf(f,"element face %i\n",(int)[triangles count]);
     fprintf(f,"property list uchar int vertex_indices\n");
     fprintf(f,"end_header\n");
     // WRITE VERTICES
@@ -1740,7 +2019,6 @@ void import_txt(float3D **p, int3D **t, int2D **e, int *np, int *nt, int *ne, ch
 	FILE	*f;
 	int		i;
 	char	str[256];
-	float3D	center={0,0,0};
 	
 	f=fopen(path,"r");
 	fgets(str,256,f);
@@ -1749,16 +2027,13 @@ void import_txt(float3D **p, int3D **t, int2D **e, int *np, int *nt, int *ne, ch
     *ne=0;
 	sscanf(str," %i %i %i ",np,nt,ne);
 	*p=(float3D*)calloc(*np,sizeof(float3D));
-	for(i=0;i<*np;i++)
+    for(i=0;i<*np;i++)
 	{
 		fgets(str,256,f);
 		sscanf(str," %f %f %f ",&((*p)[i].x),&((*p)[i].y),&((*p)[i].z));
-		center=(float3D){center.x+(*p)[i].x,center.y+(*p)[i].y,center.z+(*p)[i].z};
 	}
-	center=(float3D){center.x/(float)(*np),center.y/(float)(*np),center.z/(float)(*np)};
-	for(i=0;i<*np;i++)
-		(*p)[i]=(float3D){(*p)[i].x-center.x,(*p)[i].y-center.y,(*p)[i].z-center.z};
-	*t=(int3D*)calloc(*nt,sizeof(int3D));
+
+    *t=(int3D*)calloc(*nt,sizeof(int3D));
 	for(i=0;i<*nt;i++)
 	{
 		fgets(str,256,f);
@@ -1811,8 +2086,10 @@ void import_ply(float3D **p, int3D **t, int2D **e, int *np, int *nt, int *ne, ch
    		center=(float3D){center.x+(*p)[i].x,center.y+(*p)[i].y,center.z+(*p)[i].z};
     }
 	center=(float3D){center.x/(float)(*np),center.y/(float)(*np),center.z/(float)(*np)};
-	for(i=0;i<*np;i++)
+	/*
+    for(i=0;i<*np;i++)
 		(*p)[i]=(float3D){(*p)[i].x-center.x,(*p)[i].y-center.y,(*p)[i].z-center.z};
+     */
     printf("Read %i vertices\n",*np);
     
     // READ TRIANGLES
@@ -1847,7 +2124,8 @@ void import_ply(float3D **p, int3D **t, int2D **e, int *np, int *nt, int *ne, ch
 	Float3D	*po;
 	Int3D	*tr;
     Int2D   *ed;
-	
+    float3D	mi,ma;
+
 	if([ext isEqualToString:@"txt"])
         import_txt(&p,&t,&e,&nptmp,&nttmp,&netmp,str);
     else
@@ -1887,7 +2165,20 @@ void import_ply(float3D **p, int3D **t, int2D **e, int *np, int *nt, int *ne, ch
 		[ed release];
 	}
 	
-	free(p);
+    // configure display center
+    mi=ma=p[0];
+    for(i=0;i<nptmp;i++)
+    {
+        if(p[i].x<mi.x) mi.x=p[i].x;
+        if(p[i].y<mi.y) mi.y=p[i].y;
+        if(p[i].z<mi.z) mi.z=p[i].z;
+        if(p[i].x>ma.x) ma.x=p[i].x;
+        if(p[i].y>ma.y) ma.y=p[i].y;
+        if(p[i].z>ma.z) ma.z=p[i].z;
+    }
+    center=(float3D){(mi.x+ma.x)/2.0,(mi.y+ma.y)/2.0,(mi.z+ma.z)/2.0};
+
+    free(p);
 	free(t);
 	
 	[self depth];								// add colours (depth)
@@ -1965,7 +2256,7 @@ void import_ply(float3D **p, int3D **t, int2D **e, int *np, int *nt, int *ne, ch
         if(p1.z>max1.z) max1.z=p1.z;
     }
     s=(max1.x-min1.x)*(max1.y-min1.y)*(max1.z-min1.z) / ((max0.x-min0.x)*(max0.y-min0.y)*(max0.z-min0.z));
-    s=pow(s,0.33333);
+    s=1;//pow(s,0.33333);
     
     for(i=0;i<nptmp;i++)
         [[points objectAtIndex:i] setSmoothCoords:p[i].x*s:p[i].y*s:p[i].z*s];
@@ -2082,6 +2373,25 @@ void import_ply(float3D **p, int3D **t, int2D **e, int *np, int *nt, int *ne, ch
         v_m(r,v,m);
         [p setCoords:r[0]:r[1]:r[2]];
 	}
+}
+-(void)configureNeighbours
+{
+    // find incident triangles for every vertex
+
+    int             i;
+    int             *tr;
+    
+    if([neighbours count])
+        [neighbours removeAllObjects];
+    for(i=0;i<[points count];i++)
+        [neighbours addObject:[NSMutableArray arrayWithCapacity:32]];
+    for(i=0;i<[triangles count];i++)
+    {
+        tr=[[triangles objectAtIndex:i] ve];
+        [[neighbours objectAtIndex:tr[0]] addObject:[NSNumber numberWithInt:i]];
+        [[neighbours objectAtIndex:tr[1]] addObject:[NSNumber numberWithInt:i]];
+        [[neighbours objectAtIndex:tr[2]] addObject:[NSNumber numberWithInt:i]];
+    }
 }
 #pragma mark -
 #pragma mark [ Möbius ]

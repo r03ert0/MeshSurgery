@@ -32,7 +32,7 @@
 -(IBAction)selectConnected:(id)sender;
 -(IBAction)selectMore:(id)sender;
 -(IBAction)selectLess:(id)sender;
--(IBAction)selectNonmanifold:(id)sender;
+-(IBAction)splitVertex:(id)sender;
 -(IBAction)selectLoop:(id)sender;
 -(IBAction)selectTunnel:(id)sender;
 -(IBAction)fillLoop:(id)sender;

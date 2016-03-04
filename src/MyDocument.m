@@ -173,10 +173,25 @@
 	[mesh selectLess];
 	[view setNeedsDisplay:YES];
 }
--(IBAction)selectNonmanifold:(id)sender
+-(IBAction)selectNonmanifoldVerts:(id)sender
 {
-	[mesh selectNonmanifold];
-	[view setNeedsDisplay:YES];
+    [mesh selectNonmanifoldVerts];
+    [view setNeedsDisplay:YES];
+}
+-(IBAction)selectNonmanifoldEds:(id)sender
+{
+    [mesh selectNonmanifoldEds];
+    [view setNeedsDisplay:YES];
+}
+-(IBAction)selectNonmanifoldTris:(id)sender
+{
+    [mesh selectNonmanifoldTris];
+    [view setNeedsDisplay:YES];
+}
+-(IBAction)splitVertex:(id)sender
+{
+    [mesh splitVertex];
+    [view setNeedsDisplay:YES];
 }
 -(IBAction)selectLoop:(id)sender
 {
@@ -451,7 +466,7 @@ void mobius(float x0, float y0, float th, float R, float *x1, float *y1)
     
     [open setAllowedFileTypes:[NSArray arrayWithObjects:@"ply",@"txt",nil]];
     result=[open runModal];
-    if (result!=NSOKButton)
+    if (result!=NSModalResponseOK)
         return;
     
     path=[[[open URLs] objectAtIndex:0] path];

@@ -20,7 +20,8 @@
 	NSMutableArray		*edges;
 	NSMutableArray		*triangles;
 	NSMutableArray		*points;
-	NSMutableArray		*colours;
+    NSMutableArray		*colours;
+    NSMutableArray		*neighbours;
 	
 	int	displaySurface;
 	int	displayWireframe;
@@ -53,7 +54,9 @@
 -(NSMutableArray*)triangles;
 -(NSMutableArray*)points;
 -(NSMutableArray*)colours;
+-(NSMutableArray*)neighbours;
 
+-(void)configureNeighbours;
 -(int)selectedCount;
 -(void)selectAll;
 -(void)selectNone;
@@ -61,7 +64,10 @@
 -(void)selectMore;
 -(void)selectLess;
 -(void)selectTunnel;
--(void)selectNonmanifold;
+-(void)selectNonmanifoldVerts;
+-(void)selectNonmanifoldEds;
+-(int)selectNonmanifoldTris;
+-(void)splitVertex;
 
 -(void)configureSmooth;
 -(void)setSmoothValue:(float)t;
@@ -107,13 +113,14 @@
 -(void)readVerticesFromPath:(NSString*)path;
 -(void)readSmoothedVerticesFromPath:(NSString*)path;
 
-
 -(int)numberOfSelectedVertices;
 -(int)indexOfFirstSelectedVertex;
 
 -(void)nradio;
 -(void)flipEdge;
 -(void)applyRotation;
+
+-(void)foldingPattern;
 
 void mobius1(float x0, float y0, float th, float R, float *x1, float *y1);
 void mobius2(float x0, float y0, float th, float R, float *x1, float *y1);
