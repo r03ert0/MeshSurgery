@@ -39,4 +39,12 @@ MeshSurgery is coded in Objective-C and compiled for MacOS.
 <img width="1057" alt="ms-5" src="https://cloud.githubusercontent.com/assets/2310732/15064948/7f5fe1d0-135a-11e6-8fff-575586db8e33.png">
 <img width="1057" alt="ms-6" src="https://cloud.githubusercontent.com/assets/2310732/15064952/7f62aece-135a-11e6-9094-2d1854cb95c3.png">
 
+## Keyboard commands
+* alt click to select a vertex, and shift alt click will extend the selection  
+* select 3 vertices and hit F to create a face; or flip the normal of selected faces
+* select 3 vertices and shift backspace will delete the face
+* ctrl click will add a vertex at your mouse position; selecting two vertices and then ctrl click will add new vertex in the average z plane of the two vertices
+* backspace will delete a selected vertex
+* keep alt pressed to move a selected vertex
+* select one vertex and push C to center this vertex in the viewer
 
