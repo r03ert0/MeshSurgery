@@ -32,13 +32,6 @@ MeshSurgery is coded in Objective-C and compiled for MacOS.
 * Split a non-manifold edge
 * Select a non-manifold edge loop given a selected vertex.
 
-<img width="1057" alt="ms-1" src="https://cloud.githubusercontent.com/assets/2310732/15064949/7f60b920-135a-11e6-9a09-1d982ef72983.png">
-<img width="1057" alt="ms-2" src="https://cloud.githubusercontent.com/assets/2310732/15064950/7f60ea9e-135a-11e6-9021-7d68920073da.png">
-<img width="1057" alt="ms-3" src="https://cloud.githubusercontent.com/assets/2310732/15064951/7f5fa95e-135a-11e6-8382-7977194b9176.png">
-<img width="1057" alt="ms-4" src="https://cloud.githubusercontent.com/assets/2310732/15064947/7f5f29ca-135a-11e6-8b29-4b29763661fe.png">
-<img width="1057" alt="ms-5" src="https://cloud.githubusercontent.com/assets/2310732/15064948/7f5fe1d0-135a-11e6-8fff-575586db8e33.png">
-<img width="1057" alt="ms-6" src="https://cloud.githubusercontent.com/assets/2310732/15064952/7f62aece-135a-11e6-9094-2d1854cb95c3.png">
-
 ## Keyboard commands
 * alt click to select a vertex, and shift alt click will extend the selection  
 * select 3 vertices and hit F to create a face; or flip the normal of selected faces
@@ -48,3 +41,9 @@ MeshSurgery is coded in Objective-C and compiled for MacOS.
 * keep alt pressed to move a selected vertex
 * select one vertex and push C to center this vertex in the viewer
 
+<img width="1057" alt="ms-1" src="https://cloud.githubusercontent.com/assets/2310732/15064949/7f60b920-135a-11e6-9a09-1d982ef72983.png">
+<img width="1057" alt="ms-2" src="https://cloud.githubusercontent.com/assets/2310732/15064950/7f60ea9e-135a-11e6-9021-7d68920073da.png">
+<img width="1057" alt="ms-3" src="https://cloud.githubusercontent.com/assets/2310732/15064951/7f5fa95e-135a-11e6-8382-7977194b9176.png">
+<img width="1057" alt="ms-4" src="https://cloud.githubusercontent.com/assets/2310732/15064947/7f5f29ca-135a-11e6-8b29-4b29763661fe.png">
+<img width="1057" alt="ms-5" src="https://cloud.githubusercontent.com/assets/2310732/15064948/7f5fe1d0-135a-11e6-8fff-575586db8e33.png">
+<img width="1057" alt="ms-6" src="https://cloud.githubusercontent.com/assets/2310732/15064952/7f62aece-135a-11e6-9094-2d1854cb95c3.png">
