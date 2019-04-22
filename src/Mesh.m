@@ -147,38 +147,44 @@
 	nclass=1;
 
 	// 1. Assign points to classes, build the class equivalence table
-	while(obj=[e nextObject])
-	{
-		tr=[obj ve];
-		min=-1;
-		for(i=0;i<3;i++)
-			if(pointClass[tr[i]]>0)
-			{
-				if(min<0)
-					min=pointClass[tr[i]];
-				else
-					min=MIN(min,pointClass[tr[i]]);
-			}
-		if(min==-1)
-		{
-			for(i=0;i<3;i++)
-				pointClass[tr[i]]=nclass;
-			class[nclass]=nclass;
-			nclass++;
-		}
-		else
-		{
-			for(i=0;i<3;i++)
-			{
-				if(pointClass[tr[i]] && pointClass[tr[i]]!=min)
-					class[pointClass[tr[i]]]=-min;
-				pointClass[tr[i]]=min;
-			}
-		}
-	}
+    while(obj=[e nextObject])
+    {
+        tr=[obj ve];
+        min=-1;
+        for(i=0;i<3;i++)
+            if(pointClass[tr[i]]>0)
+            {
+                if(min<0)
+                    min=pointClass[tr[i]];
+                else
+                    min=MIN(min,pointClass[tr[i]]);
+            }
+        if(min==-1)
+        {
+            for(i=0;i<3;i++)
+                pointClass[tr[i]]=nclass;
+            class[nclass]=nclass;
+            nclass++;
+        }
+        else
+        {
+            for(i=0;i<3;i++)
+            {
+                if(pointClass[tr[i]] && pointClass[tr[i]]!=min)
+                    class[pointClass[tr[i]]]=-min;
+                pointClass[tr[i]]=min;
+            }
+        }
+    }
+    printf("points: %i\n",(int)[points count]);
+    for(i=0;i<[points count];i++)
+        printf("%i. %i\n",i,pointClass[i]);
+    printf("nclass: %i\n",nclass);
+    for(i=0;i<nclass;i++)
+        printf("%i. %i\n",i,class[i]);
 	
 	// 2. Clean the class equivalence table
-	for(i=2;i<nclass;i++)
+	for(i=1;i<nclass;i++)
 	{
 		if(class[i]<0)
 		{
@@ -213,6 +219,7 @@
 		}
 	}
 	printf("maxclass=%i, N=%i\n",imax,max);
+    printf("point class inside: %i, outide: %i\n",pointClass[2135],pointClass[2139]);
 	
 	// 4. Select only vertices in the largest class
 	for(i=0;i<[points count];i++)
@@ -1054,6 +1061,13 @@ int compareEdges (const void *a, const void *b)
     n=0;
     do
     {
+        if(e[j].a==e[j+1].a && e[j].b==e[j+1].b && e[j].a==e[j+2].a && e[j].b==e[j+2].b)
+        {
+            [(Float3D*)[points objectAtIndex:e[j].a] setSelected:YES];
+            [(Float3D*)[points objectAtIndex:e[j].b] setSelected:YES];
+            j+=3;
+            n++;
+        }
         if(e[j].a==e[j+1].a && e[j].b==e[j+1].b)
             j+=2;
         else
@@ -1986,6 +2000,7 @@ int compareEdges (const void *a, const void *b)
 	int		i;
 	float3D	p;
 	int3D	t;
+    int2D   e;
 
 	f=fopen([path UTF8String],"w");
 
@@ -1999,6 +2014,9 @@ int compareEdges (const void *a, const void *b)
     fprintf(f,"property float z\n");
     fprintf(f,"element face %i\n",(int)[triangles count]);
     fprintf(f,"property list uchar int vertex_indices\n");
+    fprintf(f,"element edge %i\n",(int)[edges count]);
+    fprintf(f,"property int vertex1\n");
+    fprintf(f,"property int vertex2\n");
     fprintf(f,"end_header\n");
     // WRITE VERTICES
     for(i=0;i<[points count];i++)
@@ -2011,6 +2029,12 @@ int compareEdges (const void *a, const void *b)
     {
         t=*(int3D*)[(Int3D*)[triangles objectAtIndex:i] ve];
         fprintf(f,"3 %i %i %i\n",t.a,t.b,t.c);
+    }
+    // WRITE EDGES
+    for(i=0;i<[edges count];i++)
+    {
+        e=*(int2D*)[(Int2D*)[edges objectAtIndex:i] ve];
+        fprintf(f,"%i %i\n",e.a,e.b);
     }
     fclose(f);
 }

@@ -1,0 +1,18 @@
+-x
+objective-c
+-arch
+x86_64
+-gmodules
+-fpascal-strings
+-O0
+-isysroot
+/Applications/_Programming/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk
+-fasm-blocks
+-mmacosx-version-min=10.10
+-g
+-I/Users/roberto/Applications/brainbits/m.MeshSurgery/src/build/Debug/include
+-F/Users/roberto/Applications/brainbits/m.MeshSurgery/src/build/Debug
+x86_64-apple-darwin16.5.0
+"4.2.1 Compatible Apple LLVM 8.1.0 (clang-802.0.38)"
+SDK_PRODUCT_BUILD_VERSION=16E185
+16E185

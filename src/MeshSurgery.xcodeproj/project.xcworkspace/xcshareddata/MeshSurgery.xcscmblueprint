@@ -9,8 +9,8 @@
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "32C7A068-BFD9-4435-9079-3726462960E2",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "555F19E5F3C505B9BEFE867796EE88BD7AF2D691" : "m.MeshSurgery",
-    "5F4861D1F25302FC6CA506A699E6D0DAC92B9D2E" : "RAMONES\/StereotaxicEditorRAMON"
+    "555F19E5F3C505B9BEFE867796EE88BD7AF2D691" : "m.MeshSurgery\/",
+    "5F4861D1F25302FC6CA506A699E6D0DAC92B9D2E" : "RAMONES\/StereotaxicEditorRAMON\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "MeshSurgery",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,

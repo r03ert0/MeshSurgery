@@ -156,7 +156,7 @@
 	int	tag=[[sender selectedCell] tag];
 	int	value=[sender intValue];
 	
-	[view addRotation:(value-0.5)*60 toAxis:tag];
+	[view addRotation:(value-0.5)*15 toAxis:tag];
 }
 -(IBAction)selectConnected:(id)sender
 {
