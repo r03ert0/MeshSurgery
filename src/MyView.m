@@ -92,7 +92,7 @@
 		//	glDisable(GL_CULL_FACE);
 		//else
 			glEnable(GL_CULL_FACE);
-        glViewport(0, 0, (GLsizei) rect.size.width, (GLsizei) rect.size.height);
+        glViewport(0, 0, (GLsizei) 2 * rect.size.width, (GLsizei) 2 * rect.size.height);
         glClearColor(1,1,1, 1);
         glClear(GL_COLOR_BUFFER_BIT+GL_DEPTH_BUFFER_BIT+GL_STENCIL_BUFFER_BIT);
         glMatrixMode(GL_PROJECTION);
