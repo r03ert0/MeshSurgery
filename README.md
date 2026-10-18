@@ -9,6 +9,22 @@ smoothed version, and back. This facilitates finding and correcting topological 
 
 MeshSurgery is coded in Objective-C and compiled for MacOS.
 
+## Compilation
+Last updated: 2026-10-18 (macOS 26.5, Apple silicon).
+
+Xcode is not required, only the Xcode Command Line Tools (`xcode-select --install`). From the project root:
+
+```
+./build.sh
+```
+
+The script compiles the sources in `src/` with `clang` (arm64, macOS 11 or later, manual retain/release, so no ARC),
+links against Cocoa and OpenGL, assembles and ad-hoc signs `build/MeshSurgery.app`, and creates a symbolic link
+`MeshSurgery.app` at the project root pointing to it. Open it with `open MeshSurgery.app`.
+
+The Xcode project (`src/MeshSurgery.xcodeproj`) is kept but was not used for this build. The build is arm64 only (no Rosetta needed).
+Note that OpenGL is deprecated by Apple, although it still works.
+
 ## Viewing tools
 * OpenGL-based interactive 3D viewer.
 * Outside and inside are displayed in grey and pink, to facilitate detecting inverted triangles.
